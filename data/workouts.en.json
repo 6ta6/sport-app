@@ -1,0 +1,102 @@
+[
+  {
+    "id": "w-001",
+    "title": "Wrestler's Strength: Fundamentals",
+    "description": "Foundational strength program for wrestlers: squats, presses, and pull-ups. Builds the overall strength you need on the mat.",
+    "category": "wrestlers",
+    "exercises": [
+      { "exerciseId": "ex-012", "sets": 5, "reps": 5 },
+      { "exerciseId": "ex-003", "sets": 4, "reps": 8 },
+      { "exerciseId": "ex-022", "sets": 4, "reps": 8 },
+      { "exerciseId": "ex-021", "sets": 4, "reps": 6 },
+      { "exerciseId": "ex-025", "sets": 3, "reps": 15 }
+    ]
+  },
+  {
+    "id": "w-002",
+    "title": "Explosive Power",
+    "description": "Explosive strength training: jumps, kettlebell swings, and powerful pull-ups. Exactly what you need for takedowns and shots.",
+    "category": "wrestlers",
+    "exercises": [
+      { "exerciseId": "ex-016", "sets": 4, "reps": 10 },
+      { "exerciseId": "ex-025", "sets": 5, "reps": 15 },
+      { "exerciseId": "ex-009", "sets": 3, "reps": 10 },
+      { "exerciseId": "ex-026", "sets": 4, "reps": 8 }
+    ]
+  },
+  {
+    "id": "w-003",
+    "title": "Chest & Arms",
+    "description": "Classic split for chest and arms: presses, extensions, and curls. Moderate weights, focus on technique.",
+    "category": "bodybuilders",
+    "exercises": [
+      { "exerciseId": "ex-003", "sets": 4, "reps": 10 },
+      { "exerciseId": "ex-004", "sets": 3, "reps": 12 },
+      { "exerciseId": "ex-029", "sets": 3, "reps": 12 },
+      { "exerciseId": "ex-008", "sets": 4, "reps": 12 },
+      { "exerciseId": "ex-006", "sets": 3, "reps": 12 }
+    ]
+  },
+  {
+    "id": "w-004",
+    "title": "Back & Shoulders",
+    "description": "Training for a wide back and rounded shoulders: bent-over rows, pull-ups, and overhead presses.",
+    "category": "bodybuilders",
+    "exercises": [
+      { "exerciseId": "ex-022", "sets": 4, "reps": 10 },
+      { "exerciseId": "ex-021", "sets": 4, "reps": 8 },
+      { "exerciseId": "ex-010", "sets": 4, "reps": 10 },
+      { "exerciseId": "ex-024", "sets": 3, "reps": 15 }
+    ]
+  },
+  {
+    "id": "w-005",
+    "title": "Beginner WOD",
+    "description": "Introduction to CrossFit: simple movements and moderate volume. Perform exercises in rounds, rest 1–2 minutes between rounds.",
+    "category": "crossfit",
+    "exercises": [
+      { "exerciseId": "ex-011", "sets": 3, "reps": 20 },
+      { "exerciseId": "ex-001", "sets": 3, "reps": 15 },
+      { "exerciseId": "ex-025", "sets": 4, "reps": 15 },
+      { "exerciseId": "ex-013", "sets": 3, "reps": 12 },
+      { "exerciseId": "ex-028", "sets": 3, "reps": 12 }
+    ]
+  },
+  {
+    "id": "w-006",
+    "title": "Cardio Mix",
+    "description": "High-intensity functional endurance workout. Minimal rest between sets, keep the pace brisk.",
+    "category": "crossfit",
+    "exercises": [
+      { "exerciseId": "ex-016", "sets": 4, "reps": 12 },
+      { "exerciseId": "ex-014", "sets": 3, "reps": 20 },
+      { "exerciseId": "ex-001", "sets": 3, "reps": 20 },
+      { "exerciseId": "ex-030", "sets": 3, "reps": 10 }
+    ]
+  },
+  {
+    "id": "w-007",
+    "title": "Strong Legs",
+    "description": "Strength work for runners: lunges, squats, and calf raises. Makes running more efficient and protects your knees.",
+    "category": "runners",
+    "exercises": [
+      { "exerciseId": "ex-013", "sets": 3, "reps": 15 },
+      { "exerciseId": "ex-018", "sets": 3, "reps": 10 },
+      { "exerciseId": "ex-015", "sets": 3, "reps": 12 },
+      { "exerciseId": "ex-017", "sets": 3, "reps": 12 },
+      { "exerciseId": "ex-019", "sets": 4, "reps": 20 }
+    ]
+  },
+  {
+    "id": "w-008",
+    "title": "Core & Stability",
+    "description": "Exercises for the core and posterior chain. A strong, stable torso helps runners maintain posture over distance.",
+    "category": "runners",
+    "exercises": [
+      { "exerciseId": "ex-028", "sets": 3, "reps": 15 },
+      { "exerciseId": "ex-024", "sets": 3, "reps": 15 },
+      { "exerciseId": "ex-027", "sets": 3, "reps": 10 },
+      { "exerciseId": "ex-030", "sets": 3, "reps": 10 }
+    ]
+  }
+]

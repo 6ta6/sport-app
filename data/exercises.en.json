@@ -1,0 +1,243 @@
+[
+  {
+    "id": "ex-001",
+    "name": "Push-ups",
+    "muscleGroup": "arms",
+    "equipment": "none",
+    "difficulty": "easy",
+    "description": "Keep your body in a straight line, elbows at about 45 degrees to your torso. Lower on inhale, push up on exhale.",
+    "videoUrl": "https://www.youtube.com/watch?v=dQw4w9WgXcQ"
+  },
+  {
+    "id": "ex-002",
+    "name": "Standing Dumbbell Curl",
+    "muscleGroup": "arms",
+    "equipment": "dumbbells",
+    "difficulty": "easy",
+    "description": "Stand tall, keep your elbows pinned to your sides. Curl the dumbbells to your shoulders without swinging or using momentum."
+  },
+  {
+    "id": "ex-003",
+    "name": "Barbell Bench Press",
+    "muscleGroup": "arms",
+    "equipment": "bench",
+    "difficulty": "medium",
+    "description": "Lie on the bench with feet flat on the floor. Lower the bar to your chest and press up, stopping just short of locking out the elbows."
+  },
+  {
+    "id": "ex-004",
+    "name": "Close-Grip Push-ups",
+    "muscleGroup": "arms",
+    "equipment": "none",
+    "difficulty": "medium",
+    "description": "Place your hands close together so your thumbs and index fingers form a triangle. Lower your chest toward your hands."
+  },
+  {
+    "id": "ex-005",
+    "name": "Dumbbell Hammer Curl",
+    "muscleGroup": "arms",
+    "equipment": "dumbbells",
+    "difficulty": "easy",
+    "description": "Hold the dumbbells with a neutral grip, palms facing each other. Curl them to your shoulders without rotating your wrists."
+  },
+  {
+    "id": "ex-006",
+    "name": "Overhead Triceps Extension",
+    "muscleGroup": "arms",
+    "equipment": "dumbbells",
+    "difficulty": "medium",
+    "description": "Hold one dumbbell with both hands overhead. Bend only at the elbows to lower it behind your head, then press back up."
+  },
+  {
+    "id": "ex-007",
+    "name": "Close-Grip Pull-ups",
+    "muscleGroup": "arms",
+    "equipment": "pull-up-bar",
+    "difficulty": "hard",
+    "description": "Grab the bar with a shoulder-width or narrower grip. Pull yourself up until your chin is over the bar, without swinging."
+  },
+  {
+    "id": "ex-008",
+    "name": "Barbell Curl",
+    "muscleGroup": "arms",
+    "equipment": "barbell",
+    "difficulty": "medium",
+    "description": "Stand tall, elbows pinned to your sides. Curl the bar to your shoulders using only your biceps, without leaning back."
+  },
+  {
+    "id": "ex-009",
+    "name": "Pike Push-ups",
+    "muscleGroup": "arms",
+    "equipment": "none",
+    "difficulty": "hard",
+    "description": "Form an inverted V with your body, hips high. Bend your arms and lower the top of your head toward the floor, then press back up."
+  },
+  {
+    "id": "ex-010",
+    "name": "Kettlebell Overhead Press",
+    "muscleGroup": "arms",
+    "equipment": "kettlebell",
+    "difficulty": "medium",
+    "description": "Hold the kettlebell at your shoulder, palm facing you. Press it overhead until your arm is straight, then lower it back smoothly."
+  },
+  {
+    "id": "ex-011",
+    "name": "Bodyweight Squat",
+    "muscleGroup": "legs",
+    "equipment": "none",
+    "difficulty": "easy",
+    "description": "Stand with feet shoulder-width apart. Sit back as if into a chair, keeping your back straight and knees tracking over your toes."
+  },
+  {
+    "id": "ex-012",
+    "name": "Barbell Back Squat",
+    "muscleGroup": "legs",
+    "equipment": "barbell",
+    "difficulty": "hard",
+    "description": "Rest the barbell on your upper back, feet shoulder-width apart. Squat until your thighs are parallel to the floor or lower, knees tracking over toes."
+  },
+  {
+    "id": "ex-013",
+    "name": "Walking Lunges",
+    "muscleGroup": "legs",
+    "equipment": "none",
+    "difficulty": "medium",
+    "description": "Take a long step forward and lower until both knees bend to 90 degrees. Push off the front foot and bring the back leg forward."
+  },
+  {
+    "id": "ex-014",
+    "name": "Goblet Squat",
+    "muscleGroup": "legs",
+    "equipment": "kettlebell",
+    "difficulty": "medium",
+    "description": "Hold the kettlebell with both hands at chest level. Squat down, pushing your knees out, and keep your back straight."
+  },
+  {
+    "id": "ex-015",
+    "name": "Dumbbell Romanian Deadlift",
+    "muscleGroup": "legs",
+    "equipment": "dumbbells",
+    "difficulty": "medium",
+    "description": "Stand with feet shoulder-width apart, dumbbells in front of your thighs. Hinge at the hips with a straight back, sliding the weights down your legs, knees slightly bent."
+  },
+  {
+    "id": "ex-016",
+    "name": "Jump Squats",
+    "muscleGroup": "legs",
+    "equipment": "none",
+    "difficulty": "hard",
+    "description": "Squat until your thighs are parallel to the floor, then explode upward. Land softly on slightly bent knees."
+  },
+  {
+    "id": "ex-017",
+    "name": "Step-ups",
+    "muscleGroup": "legs",
+    "equipment": "bench",
+    "difficulty": "easy",
+    "description": "Place one foot on the bench and drive through it to stand up. Lower down smoothly and switch legs."
+  },
+  {
+    "id": "ex-018",
+    "name": "Bulgarian Split Squat",
+    "muscleGroup": "legs",
+    "equipment": "bench",
+    "difficulty": "hard",
+    "description": "Rest the top of your back foot on the bench, front foot forward. Squat on the front leg until the thigh is parallel to the floor."
+  },
+  {
+    "id": "ex-019",
+    "name": "Standing Calf Raise",
+    "muscleGroup": "legs",
+    "equipment": "none",
+    "difficulty": "easy",
+    "description": "Stand tall and rise onto your toes, pausing for a second at the top. Hold dumbbells for extra resistance."
+  },
+  {
+    "id": "ex-020",
+    "name": "Sumo Squat with Kettlebell",
+    "muscleGroup": "legs",
+    "equipment": "kettlebell",
+    "difficulty": "medium",
+    "description": "Stand with feet wide and toes pointed out. Hold the kettlebell with both hands and squat between your knees, keeping your back straight."
+  },
+  {
+    "id": "ex-021",
+    "name": "Wide-Grip Pull-ups",
+    "muscleGroup": "back",
+    "equipment": "pull-up-bar",
+    "difficulty": "hard",
+    "description": "Grab the bar with a wide overhand grip. Pull your chest to the bar, driving your elbows down and back."
+  },
+  {
+    "id": "ex-022",
+    "name": "Bent-Over Barbell Row",
+    "muscleGroup": "back",
+    "equipment": "barbell",
+    "difficulty": "medium",
+    "description": "Hinge forward about 45–60 degrees with a straight back. Pull the bar toward your lower abs, squeezing your shoulder blades together."
+  },
+  {
+    "id": "ex-023",
+    "name": "Single-Arm Dumbbell Row",
+    "muscleGroup": "back",
+    "equipment": "dumbbells",
+    "difficulty": "easy",
+    "description": "Brace one knee and hand on a bench, back parallel to the floor. Pull the dumbbell to your hip, driving your elbow up."
+  },
+  {
+    "id": "ex-024",
+    "name": "Back Extension on Bench",
+    "muscleGroup": "back",
+    "equipment": "bench",
+    "difficulty": "easy",
+    "description": "Lie face-down on the bench with hips at the edge. Lift your torso with a straight back until your body forms a line with your legs."
+  },
+  {
+    "id": "ex-025",
+    "name": "Kettlebell Swing",
+    "muscleGroup": "back",
+    "equipment": "kettlebell",
+    "difficulty": "medium",
+    "description": "Stand with feet slightly wider than shoulders. Drive your hips powerfully to swing the kettlebell to chest height, using your back and glutes, not your arms."
+  },
+  {
+    "id": "ex-026",
+    "name": "Chin-ups",
+    "muscleGroup": "back",
+    "equipment": "pull-up-bar",
+    "difficulty": "medium",
+    "description": "Grab the bar with an underhand grip, palms facing you, shoulder-width apart. Pull up smoothly, feeling your lats working."
+  },
+  {
+    "id": "ex-027",
+    "name": "Good Mornings",
+    "muscleGroup": "back",
+    "equipment": "barbell",
+    "difficulty": "hard",
+    "description": "Rest the barbell on your shoulders, feet shoulder-width apart. Hinge at the hips with a straight back and slightly bent knees, then return to standing."
+  },
+  {
+    "id": "ex-028",
+    "name": "Superman",
+    "muscleGroup": "back",
+    "equipment": "none",
+    "difficulty": "easy",
+    "description": "Lie face-down with arms extended forward. Lift your arms, chest, and legs off the floor at the same time, hold for 1–2 seconds, then lower."
+  },
+  {
+    "id": "ex-029",
+    "name": "Dumbbell Pullover",
+    "muscleGroup": "back",
+    "equipment": "bench",
+    "difficulty": "medium",
+    "description": "Lie on the bench holding one dumbbell with both hands over your chest. With arms slightly bent, lower it behind your head and return to start."
+  },
+  {
+    "id": "ex-030",
+    "name": "Renegade Row",
+    "muscleGroup": "back",
+    "equipment": "dumbbells",
+    "difficulty": "hard",
+    "description": "Get into a plank position with hands on dumbbells. Row one dumbbell to your hip while keeping your torso stable, then switch sides."
+  }
+]
