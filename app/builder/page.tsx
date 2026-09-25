@@ -14,8 +14,7 @@ const DEFAULT_REPS = 10;
 
 const GROUPS: MuscleGroup[] = ['arms', 'legs', 'back'];
 
-// НОВОЕ: варианты фильтров по группе мышц для библиотеки упражнений.
-// Используем существующие ключи переводов из раздела exercises.*
+// Варианты фильтров по группе мышц для библиотеки упражнений
 const FILTERS: { value: MuscleGroup | 'all'; labelKey: string }[] = [
   { value: 'all', labelKey: 'exercises.filterAll' },
   { value: 'arms', labelKey: 'exercises.filterArms' },
@@ -64,8 +63,7 @@ export default function BuilderPage() {
     back: 2,
   });
 
-  // НОВОЕ: состояние для фильтра библиотеки упражнений.
-  // По умолчанию выбрано «Все» — показываются все упражнения.
+  // Состояние для фильтра библиотеки упражнений
   const [activeFilter, setActiveFilter] = useState<MuscleGroup | 'all'>('all');
 
   const router = useRouter();
@@ -128,10 +126,7 @@ export default function BuilderPage() {
     router.push('/training');
   };
 
-  // НОВОЕ: отбираем упражнения по фильтру.
-  // Фильтруем ТОЛЬКО по главной группе (muscleGroup).
-  // Вторичные группы (secondaryMuscles) на фильтр не влияют —
-  // это соответствует логике добавления в конструктор.
+  // Отбираем упражнения по фильтру (только по главной группе)
   const filteredExercises = exercises.filter((exercise) => {
     return activeFilter === 'all' || exercise.muscleGroup === activeFilter;
   });
@@ -169,85 +164,8 @@ export default function BuilderPage() {
         )}
 
         <div className="mt-8 grid grid-cols-1 gap-8 lg:grid-cols-2">
-          {/* ════ ЛЕВАЯ ЧАСТЬ: библиотека упражнений с фильтром ════ */}
-          <section>
-            <h2 className="text-lg font-semibold text-white">{t('builder.libraryTitle')}</h2>
-            <p className="mt-1 text-sm text-gray-500">{t('builder.libraryHint')}</p>
-
-            {/* НОВОЕ: кнопки-фильтры по группе мышц.
-                Расположены после заголовка и подсказки, перед списком упражнений. */}
-            <div className="mt-4 flex flex-wrap gap-2">
-              {FILTERS.map((filter) => {
-                const isActive = activeFilter === filter.value;
-                return (
-                  <button
-                    key={filter.value}
-                    onClick={() => setActiveFilter(filter.value)}
-                    className={
-                      isActive
-                        ? 'rounded-full bg-orange-500 px-3 py-1.5 text-xs font-medium text-white transition-colors'
-                        : 'rounded-full bg-gray-800 px-3 py-1.5 text-xs font-medium text-gray-300 transition-colors hover:bg-gray-700'
-                    }
-                  >
-                    {t(filter.labelKey)}
-                  </button>
-                );
-              })}
-            </div>
-
-            {/* Список упражнений — теперь используем filteredExercises вместо exercises */}
-            <div className="mt-4 space-y-2">
-              {filteredExercises.map((exercise) => {
-                const added = isAdded(exercise);
-
-                return (
-                  <button
-                    key={exercise.id}
-                    onClick={() => addExercise(exercise)}
-                    className={
-                      added
-                        ? 'w-full rounded-xl border border-gray-700 bg-gray-800 p-4 text-left opacity-60'
-                        : 'w-full rounded-xl border border-gray-700 bg-gray-800 p-4 text-left transition-colors hover:border-orange-500/60'
-                    }
-                  >
-                    <div className="flex items-center justify-between gap-2">
-                      <span className="font-medium text-white">{exercise.name}</span>
-                      {added && (
-                        <span className="text-xs font-medium text-green-400">
-                          {t('builder.addedLabel')}
-                        </span>
-                      )}
-                    </div>
-
-                    {/* Бейджи: главная группа → вторичные группы → инвентарь */}
-                    <div className="mt-2 flex flex-wrap gap-2">
-                      {/* Главная группа мышц — ОРАНЖЕВАЯ */}
-                      <span className="rounded-full bg-orange-500/20 px-2.5 py-0.5 text-xs text-orange-400">
-                        {t(`muscles.${exercise.muscleGroup}`)}
-                      </span>
-
-                      {/* Вторичные группы мышц — РОЗОВЫЕ */}
-                      {exercise.secondaryMuscles?.map((muscle) => (
-                        <span
-                          key={muscle}
-                          className="rounded-full bg-pink-500/20 px-2.5 py-0.5 text-xs text-pink-400"
-                        >
-                          {t(`muscles.${muscle}`)}
-                        </span>
-                      ))}
-
-                      {/* Инвентарь */}
-                      <span className="rounded-full bg-gray-700 px-2.5 py-0.5 text-xs text-gray-300">
-                        {t(EQUIPMENT_KEYS[exercise.equipment])}
-                      </span>
-                    </div>
-                  </button>
-                );
-              })}
-            </div>
-          </section>
-
-          {/* ════ ПРАВАЯ ЧАСТЬ: собираемая тренировка (не меняется) ════ */}
+          {/* ════ ЛЕВАЯ СЕКЦИЯ: собираемая тренировка (ТРИ КОЛОНКИ) ════ */}
+          {/* ПОМЕНЯЛИ МЕСТАМИ: теперь эта секция первая */}
           <section>
             <h2 className="text-lg font-semibold text-white">{t('builder.yourWorkout')}</h2>
             <p className="mt-1 text-sm text-gray-500">{t('builder.yourWorkoutHint')}</p>
@@ -312,6 +230,84 @@ export default function BuilderPage() {
                       </ul>
                     )}
                   </div>
+                );
+              })}
+            </div>
+          </section>
+
+          {/* ════ ПРАВАЯ СЕКЦИЯ: библиотека упражнений с фильтром ════ */}
+          {/* ПОМЕНЯЛИ МЕСТАМИ: теперь эта секция вторая */}
+          <section>
+            <h2 className="text-lg font-semibold text-white">{t('builder.libraryTitle')}</h2>
+            <p className="mt-1 text-sm text-gray-500">{t('builder.libraryHint')}</p>
+
+            {/* Кнопки-фильтры по группе мышц */}
+            <div className="mt-4 flex flex-wrap gap-2">
+              {FILTERS.map((filter) => {
+                const isActive = activeFilter === filter.value;
+                return (
+                  <button
+                    key={filter.value}
+                    onClick={() => setActiveFilter(filter.value)}
+                    className={
+                      isActive
+                        ? 'rounded-full bg-orange-500 px-3 py-1.5 text-xs font-medium text-white transition-colors'
+                        : 'rounded-full bg-gray-800 px-3 py-1.5 text-xs font-medium text-gray-300 transition-colors hover:bg-gray-700'
+                    }
+                  >
+                    {t(filter.labelKey)}
+                  </button>
+                );
+              })}
+            </div>
+
+            {/* Список упражнений (отфильтрованный) */}
+            <div className="mt-4 space-y-2">
+              {filteredExercises.map((exercise) => {
+                const added = isAdded(exercise);
+
+                return (
+                  <button
+                    key={exercise.id}
+                    onClick={() => addExercise(exercise)}
+                    className={
+                      added
+                        ? 'w-full rounded-xl border border-gray-700 bg-gray-800 p-4 text-left opacity-60'
+                        : 'w-full rounded-xl border border-gray-700 bg-gray-800 p-4 text-left transition-colors hover:border-orange-500/60'
+                    }
+                  >
+                    <div className="flex items-center justify-between gap-2">
+                      <span className="font-medium text-white">{exercise.name}</span>
+                      {added && (
+                        <span className="text-xs font-medium text-green-400">
+                          {t('builder.addedLabel')}
+                        </span>
+                      )}
+                    </div>
+
+                    {/* Бейджи: главная группа → вторичные группы → инвентарь */}
+                    <div className="mt-2 flex flex-wrap gap-2">
+                      {/* Главная группа мышц — ОРАНЖЕВАЯ */}
+                      <span className="rounded-full bg-orange-500/20 px-2.5 py-0.5 text-xs text-orange-400">
+                        {t(`muscles.${exercise.muscleGroup}`)}
+                      </span>
+
+                      {/* Вторичные группы мышц — РОЗОВЫЕ */}
+                      {exercise.secondaryMuscles?.map((muscle) => (
+                        <span
+                          key={muscle}
+                          className="rounded-full bg-pink-500/20 px-2.5 py-0.5 text-xs text-pink-400"
+                        >
+                          {t(`muscles.${muscle}`)}
+                        </span>
+                      ))}
+
+                      {/* Инвентарь */}
+                      <span className="rounded-full bg-gray-700 px-2.5 py-0.5 text-xs text-gray-300">
+                        {t(EQUIPMENT_KEYS[exercise.equipment])}
+                      </span>
+                    </div>
+                  </button>
                 );
               })}
             </div>
