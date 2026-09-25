@@ -5,7 +5,7 @@ import Link from 'next/link';
 
 import type { Exercise, MuscleGroup, Equipment, Difficulty } from '../../types';
 import { useLanguage } from '@/lib/LanguageContext';
-import { getExercises } from '@/lib/data'; // Утилита для получения упражнений на нужном языке
+import { getExercises } from '@/lib/data';
 
 // Варианты фильтров по группе мышц
 const FILTERS: { value: MuscleGroup | 'all'; labelKey: string }[] = [
@@ -43,19 +43,13 @@ const EQUIPMENT_STYLES: Record<Equipment, string> = {
 };
 
 export default function ExercisesPage() {
-  // Достаём язык и функцию перевода из контекста
   const { language, t } = useLanguage();
-
-  // Получаем массив упражнений на текущем языке
   const exercises = getExercises(language);
 
-  // Выбранная группа мышц («все» по умолчанию)
   const [activeFilter, setActiveFilter] = useState<MuscleGroup | 'all'>('all');
-
-  // Текущий текст в поле поиска
   const [searchQuery, setSearchQuery] = useState('');
 
-  // Отбираем упражнения, которые удовлетворяют ОБОИМ условиям
+  // ФИЛЬТРАЦИЯ НЕ МЕНЯЕТСЯ: проверяем только ГЛАВНУЮ группу мышц.
   const filteredExercises = exercises.filter((exercise) => {
     const matchesGroup =
       activeFilter === 'all' || exercise.muscleGroup === activeFilter;
@@ -115,15 +109,29 @@ export default function ExercisesPage() {
                 {exercise.name}
               </Link>
 
+              {/* Бейджи: главная группа → вторичные группы → инвентарь → сложность */}
               <div className="mt-3 flex flex-wrap gap-2">
+                {/* 1. Главная группа мышц — ОРАНЖЕВАЯ */}
                 <span className="rounded-full bg-orange-500/20 px-3 py-1 text-xs font-medium text-orange-400">
                   {t(`muscles.${exercise.muscleGroup}`)}
                 </span>
 
+                {/* 2. Вторичные группы мышц — РОЗОВЫЕ */}
+                {exercise.secondaryMuscles?.map((muscle) => (
+                  <span
+                    key={muscle}
+                    className="rounded-full bg-pink-500/20 px-3 py-1 text-xs font-medium text-pink-400"
+                  >
+                    {t(`muscles.${muscle}`)}
+                  </span>
+                ))}
+
+                {/* 3. Инвентарь */}
                 <span className={`rounded-full px-3 py-1 text-xs font-medium ${EQUIPMENT_STYLES[exercise.equipment]}`}>
                   {t(EQUIPMENT_KEYS[exercise.equipment])}
                 </span>
 
+                {/* 4. Сложность */}
                 <span className={`rounded-full px-3 py-1 text-xs font-medium ${DIFFICULTY_STYLES[exercise.difficulty]}`}>
                   {t(`difficulty.${exercise.difficulty}`)}
                 </span>

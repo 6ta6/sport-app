@@ -239,5 +239,23 @@
     "equipment": "dumbbells",
     "difficulty": "hard",
     "description": "Get into a plank position with hands on dumbbells. Row one dumbbell to your hip while keeping your torso stable, then switch sides."
+  },
+  {
+    "id": "ex-031",
+    "name": "shoulders №1",
+    "muscleGroup": "back",
+    "equipment": "dumbbells",
+    "difficulty": "medium",
+    "description": ""  ,
+    "videoUrl": "https://youtu.be/ktVCHcsdIWU?t=565"
+  },
+  {
+    "id": "ex-032",
+    "name": "Burpees",
+    "muscleGroup": "arms",
+    "secondaryMuscles": ["legs", "back"],
+    "equipment": "none",
+    "difficulty": "hard",
+    "description": "From standing, squat down, place your hands on the floor, jump back into a plank, do a push-up, return to squat, then jump up. A full-body compound movement."
   }
 ]

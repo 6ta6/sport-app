@@ -239,5 +239,23 @@
     "equipment": "dumbbells",
     "difficulty": "hard",
     "description": "Встань в планку, упираясь ладонями в гантели. Поочерёдно тяни гантель к поясу, не раскачивая корпус."
+  },
+  {
+    "id": "ex-031",
+    "name": "плечи №1",
+    "muscleGroup": "back",
+    "equipment": "dumbbells",
+    "difficulty": "medium",
+    "description": ""  ,
+    "videoUrl": "https://youtu.be/ktVCHcsdIWU?t=565"
+  },
+  {
+    "id": "ex-032",
+    "name": "Бёрпи",
+    "muscleGroup": "arms",
+    "secondaryMuscles": ["legs", "back"],
+    "equipment": "none",
+    "difficulty": "hard",
+    "description": "Из положения стоя присядь, упрись руками в пол, выпрыгни в планку, сделай отжимание, вернись в присед и выпрыгни вверх. Комплексное упражнение на всё тело."
   }
 ]

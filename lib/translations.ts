@@ -83,6 +83,7 @@ export const TRANSLATIONS: Record<Language, Record<string, string>> = {
     'equipment.kettlebell': 'Гиря',
     'equipment.pullUpBar': 'Турник',
     'equipment.bench': 'Скамья',
+    'equipment.resistance-band': 'Резинка',
 
     'categories.wrestlers': 'Борцы',
     'categories.bodybuilders': 'Бодибилдеры',
@@ -169,6 +170,7 @@ export const TRANSLATIONS: Record<Language, Record<string, string>> = {
     'equipment.kettlebell': 'Kettlebell',
     'equipment.pullUpBar': 'Pull-up bar',
     'equipment.bench': 'Bench',
+    'equipment.resistance-band': 'Resistance band',
 
     'categories.wrestlers': 'Wrestlers',
     'categories.bodybuilders': 'Bodybuilders',

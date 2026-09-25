@@ -3,7 +3,7 @@
 import Link from 'next/link';
 import type { Exercise, Equipment } from '@/types';
 import { useLanguage } from '@/lib/LanguageContext';
-import { getExercises } from '@/lib/data'; // Утилита для получения упражнений на нужном языке
+import { getExercises } from '@/lib/data';
 import BackButton from '@/components/BackButton';
 
 // Маппинг значений инвентаря из JSON на ключи перевода
@@ -16,13 +16,12 @@ const EQUIPMENT_KEYS: Record<Equipment, string> = {
   bench: 'equipment.bench',
 };
 
-// Пропсы упростились: только id упражнения
+// Пропсы: только id упражнения
 type Props = {
   id: string;
 };
 
-// Функция преобразует обычную ссылку на YouTube в ссылку для встраивания.
-// ПЕРЕНЕСЕНА из серверной страницы app/exercises/[id]/page.tsx
+// Функция преобразует обычную ссылку на YouTube в ссылку для встраивания
 function getEmbedUrl(url: string): string | null {
   const match = url.match(/(?:youtube\.com\/watch\?v=|youtu\.be\/)([^&?]+)/);
   if (!match) return null;
@@ -32,16 +31,9 @@ function getEmbedUrl(url: string): string | null {
 }
 
 export default function ExerciseDetails({ id }: Props) {
-  // Достаём язык и функцию перевода из контекста
   const { language, t } = useLanguage();
-
-  // Получаем массив упражнений на текущем языке
   const exercises = getExercises(language);
-
-  // Ищем упражнение по id. Оператор ?? подставляет null, если не найдено
   const exercise = exercises.find((ex) => ex.id === id) ?? null;
-
-  // Готовим URL для видео (если упражнение и его видео существуют)
   const embedUrl = exercise?.videoUrl ? getEmbedUrl(exercise.videoUrl) : null;
 
   // ═══ Особый случай: упражнение не найдено ═══
@@ -63,27 +55,39 @@ export default function ExerciseDetails({ id }: Props) {
     );
   }
 
-  // ═══ Обычная страница деталей упражнения ═══
   return (
     <main className="min-h-screen bg-gray-900 px-4 py-8 sm:px-6">
       <div className="mx-auto max-w-4xl">
         <BackButton />
 
-        {/* Название упражнения — теперь на языке пользователя */}
         <h1 className="mt-4 text-3xl font-bold text-white sm:text-4xl">
           {exercise.name}
         </h1>
 
-        {/* Бейджи: группа мышц, инвентарь, сложность */}
+        {/* Бейджи: группа мышц (главная + вторичные), инвентарь, сложность */}
         <div className="mt-4 flex flex-wrap gap-2">
+          {/* Главная группа мышц — ОРАНЖЕВАЯ, всегда есть */}
           <span className="rounded-full bg-orange-500/20 px-3 py-1 text-xs font-medium text-orange-400">
             {t(`muscles.${exercise.muscleGroup}`)}
           </span>
 
+          {/* Вторичные группы мышц — РОЗОВЫЕ, чтобы отличались от главной.
+              Оператор ?. — если secondaryMuscles нет, ничего не отрисуется. */}
+          {exercise.secondaryMuscles?.map((muscle) => (
+            <span
+              key={muscle}
+              className="rounded-full bg-pink-500/20 px-3 py-1 text-xs font-medium text-pink-400"
+            >
+              {t(`muscles.${muscle}`)}
+            </span>
+          ))}
+
+          {/* Инвентарь */}
           <span className="rounded-full bg-gray-700 px-3 py-1 text-xs font-medium text-gray-300">
             {t(EQUIPMENT_KEYS[exercise.equipment])}
           </span>
 
+          {/* Сложность */}
           <span
             className={`rounded-full px-3 py-1 text-xs font-medium ${
               exercise.difficulty === 'easy'
@@ -97,7 +101,6 @@ export default function ExerciseDetails({ id }: Props) {
           </span>
         </div>
 
-        {/* Описание — теперь на языке пользователя */}
         <p className="mt-6 text-base leading-relaxed text-gray-300">
           {exercise.description}
         </p>
