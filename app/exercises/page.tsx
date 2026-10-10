@@ -13,6 +13,7 @@ const FILTERS: { value: MuscleGroup | 'all'; labelKey: string }[] = [
   { value: 'arms', labelKey: 'exercises.filterArms' },
   { value: 'legs', labelKey: 'exercises.filterLegs' },
   { value: 'back', labelKey: 'exercises.filterBack' },
+  { value: 'combo', labelKey: 'exercises.filterCombo' },
 ];
 
 // Маппинг значений инвентаря на ключи перевода

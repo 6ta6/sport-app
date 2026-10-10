@@ -6,6 +6,16 @@ export type Language = 'ru' | 'en';
 export const TRANSLATIONS: Record<Language, Record<string, string>> = {
   // ─────────── РУССКИЙ ───────────
   ru: {
+    'home.subtitle': 'Твой помощник для тренировок',
+    'home.workouts': 'Тренировки',
+    'home.workoutsDesc': 'Готовые программы для разных видов спорта',
+    'home.exercises': 'Упражнения',
+    'home.exercisesDesc': 'Каталог с описанием техники и видео',
+    'home.builder': 'Конструктор',
+    'home.builderDesc': 'Собери свою тренировку или сгенерируй случайную',
+    'home.training': 'Тренировка',
+    'home.trainingDesc': 'Продолжить активную тренировку',
+
     'app.title': 'Sport App',
     'back': 'Назад',
 
@@ -22,6 +32,7 @@ export const TRANSLATIONS: Record<Language, Record<string, string>> = {
     'exercises.filterArms': 'Руки',
     'exercises.filterLegs': 'Ноги',
     'exercises.filterBack': 'Спина',
+    'exercises.filterCombo': 'Комбо',
 
     'workouts.title': 'Готовые тренировки',
     'workouts.subtitle': 'Выбери категорию спортсмена — внутри собраны готовые программы тренировок.',
@@ -32,6 +43,7 @@ export const TRANSLATIONS: Record<Language, Record<string, string>> = {
     'workouts.backButton': '← Назад',
     'workouts.startButton': '🚀 Начать тренировку',
     'workouts.workoutsCount': 'Тренировок',
+    'workouts.videoTitle': 'Видео тренировки',
 
     'builder.title': 'Конструктор тренировки',
     'builder.subtitle': 'Собирай тренировку вручную или доверь выбор кубику. Кнопками «−» и «+» задай, сколько упражнений нужно в каждой группе.',
@@ -72,6 +84,7 @@ export const TRANSLATIONS: Record<Language, Record<string, string>> = {
     'muscles.arms': 'Руки',
     'muscles.legs': 'Ноги',
     'muscles.back': 'Спина',
+    'muscles.combo': 'Комбо',
 
     'difficulty.easy': 'Лёгкая',
     'difficulty.medium': 'Средняя',
@@ -83,16 +96,26 @@ export const TRANSLATIONS: Record<Language, Record<string, string>> = {
     'equipment.kettlebell': 'Гиря',
     'equipment.pullUpBar': 'Турник',
     'equipment.bench': 'Скамья',
-    'equipment.resistance-band': 'Резинка',
 
     'categories.wrestlers': 'Борцы',
     'categories.bodybuilders': 'Бодибилдеры',
     'categories.crossfit': 'Кроссфит',
     'categories.runners': 'Бегуны',
+    'categories.martial-arts': 'Единоборства',
   },
 
   // ─────────── АНГЛИЙСКИЙ ───────────
   en: {
+    'home.subtitle': 'Your workout companion',
+    'home.workouts': 'Workouts',
+    'home.workoutsDesc': 'Ready-made programs for different sports',
+    'home.exercises': 'Exercises',
+    'home.exercisesDesc': 'Catalog with technique descriptions and videos',
+    'home.builder': 'Builder',
+    'home.builderDesc': 'Build your own workout or generate a random one',
+    'home.training': 'Training',
+    'home.trainingDesc': 'Continue your active workout',
+
     'app.title': 'Sport App',
     'back': 'Back',
 
@@ -109,6 +132,7 @@ export const TRANSLATIONS: Record<Language, Record<string, string>> = {
     'exercises.filterArms': 'Arms',
     'exercises.filterLegs': 'Legs',
     'exercises.filterBack': 'Back',
+    'exercises.filterCombo': 'Combo',
 
     'workouts.title': 'Ready-made Workouts',
     'workouts.subtitle': 'Pick your sport category — each one has ready-made training programs.',
@@ -119,6 +143,7 @@ export const TRANSLATIONS: Record<Language, Record<string, string>> = {
     'workouts.backButton': '← Back',
     'workouts.startButton': '🚀 Start workout',
     'workouts.workoutsCount': 'Workouts',
+    'workouts.videoTitle': 'Workout video',
 
     'builder.title': 'Workout Builder',
     'builder.subtitle': 'Build a workout yourself or let the dice decide. Use the "−" and "+" buttons to set how many exercises you need per group.',
@@ -159,6 +184,7 @@ export const TRANSLATIONS: Record<Language, Record<string, string>> = {
     'muscles.arms': 'Arms',
     'muscles.legs': 'Legs',
     'muscles.back': 'Back',
+    'muscles.combo': 'Combo',
 
     'difficulty.easy': 'Easy',
     'difficulty.medium': 'Medium',
@@ -170,11 +196,11 @@ export const TRANSLATIONS: Record<Language, Record<string, string>> = {
     'equipment.kettlebell': 'Kettlebell',
     'equipment.pullUpBar': 'Pull-up bar',
     'equipment.bench': 'Bench',
-    'equipment.resistance-band': 'Resistance band',
 
     'categories.wrestlers': 'Wrestlers',
     'categories.bodybuilders': 'Bodybuilders',
     'categories.crossfit': 'CrossFit',
     'categories.runners': 'Runners',
+    'categories.martial-arts': 'Martial Arts',
   },
 };

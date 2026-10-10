@@ -4,9 +4,18 @@ import { useState } from 'react';
 import Link from 'next/link';
 import StartWorkoutButton from '@/components/StartWorkoutButton';
 import { useLanguage } from '@/lib/LanguageContext';
-import { getExercises } from '@/lib/data'; // Утилита для получения упражнений на нужном языке
+import { getExercises } from '@/lib/data';
 
 import type { Exercise, Workout } from '@/types';
+
+// Функция преобразует обычную ссылку на YouTube в ссылку для встраивания
+function getEmbedUrl(url: string): string | null {
+  const match = url.match(/(?:youtube\.com\/watch\?v=|youtu\.be\/)([^&?]+)/);
+  if (!match) return null;
+
+  const videoId = match[1];
+  return `https://www.youtube.com/embed/${videoId}`;
+}
 
 // Пропсы — тренировки одной категории, переданные серверной страницей
 type Props = {
@@ -55,6 +64,22 @@ export default function WorkoutsList({ workouts }: Props) {
               <h2 className="text-xl font-semibold text-white">{workout.title}</h2>
               {/* Описание — тоже на языке пользователя */}
               <p className="mt-2 text-sm text-gray-400">{workout.description}</p>
+
+              {/* НОВОЕ: блок видео тренировки (если есть videoUrl) */}
+              {workout.videoUrl && getEmbedUrl(workout.videoUrl) && (
+                <div className="mt-4">
+                  <div className="relative aspect-video w-full overflow-hidden rounded-xl border border-gray-700">
+                    <iframe
+                      src={getEmbedUrl(workout.videoUrl)!}
+                      title={`${t('workouts.videoTitle')}: ${workout.title}`}
+                      allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                      allowFullScreen
+                      frameBorder={0}
+                      className="absolute inset-0 h-full w-full"
+                    />
+                  </div>
+                </div>
+              )}
 
               <ul className="mt-4 divide-y divide-gray-700 border-y border-gray-700">
                 {workout.exercises.map((item, index) => {

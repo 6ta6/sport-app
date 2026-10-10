@@ -1,261 +1,409 @@
 [
   {
     "id": "ex-001",
-    "name": "Push-ups",
+    "name": "Kettlebell Bottoms-Up Biceps Curl",
     "muscleGroup": "arms",
-    "equipment": "none",
+    "equipment": "kettlebell",
     "difficulty": "easy",
-    "description": "Keep your body in a straight line, elbows at about 45 degrees to your torso. Lower on inhale, push up on exhale.",
-    "videoUrl": "https://www.youtube.com/watch?v=dQw4w9WgXcQ"
+    "description": "Hold the kettlebell by the handle with the bell facing downward and curl it toward your shoulder by bending your elbow. Control the movement throughout the exercise, especially during the lowering phase. This exercise develops biceps and forearm strength, as well as grip strength.\n\nRecommended: 6–10 reps in 4–5 sets.",
+    "videoUrl": "https://youtu.be/h8uKkyB0r50",
+    "defaultSets": 5,
+    "defaultReps": 10
   },
   {
     "id": "ex-002",
-    "name": "Standing Dumbbell Curl",
+    "name": "Two-Hand Kettlebell Upright Row",
     "muscleGroup": "arms",
-    "equipment": "dumbbells",
+    "equipment": "kettlebell",
     "difficulty": "easy",
-    "description": "Stand tall, keep your elbows pinned to your sides. Curl the dumbbells to your shoulders without swinging or using momentum."
+    "description": "Hold the kettlebell with both hands in front of you and pull it upward toward your chin. Do not raise your elbows above shoulder level. This exercise develops shoulder strength and movement control.\n\nRecommended: 6–10 reps in 4–5 sets.",
+    "videoUrl": "https://youtu.be/xVQ49FUFNCY",
+    "defaultSets": 5,
+    "defaultReps": 10
   },
   {
     "id": "ex-003",
-    "name": "Barbell Bench Press",
+    "name": "Kettlebell Halo",
     "muscleGroup": "arms",
-    "equipment": "bench",
-    "difficulty": "medium",
-    "description": "Lie on the bench with feet flat on the floor. Lower the bar to your chest and press up, stopping just short of locking out the elbows."
+    "equipment": "kettlebell",
+    "difficulty": "easy",
+    "description": "Hold the kettlebell in front of you and smoothly rotate it around your head in both directions. Keep your body stable and maintain control throughout the movement. This exercise develops shoulder mobility and stability, movement control, and coordination.\n\nRecommended: 6–10 reps in 4–5 sets.",
+    "videoUrl": "https://youtu.be/WGHyGlUEP5s",
+    "defaultSets": 5,
+    "defaultReps": 10
   },
   {
     "id": "ex-004",
-    "name": "Close-Grip Push-ups",
+    "name": "Two-Hand Kettlebell Overhead Raise",
     "muscleGroup": "arms",
-    "equipment": "none",
-    "difficulty": "medium",
-    "description": "Place your hands close together so your thumbs and index fingers form a triangle. Lower your chest toward your hands."
+    "equipment": "kettlebell",
+    "difficulty": "easy",
+    "description": "Hold the kettlebell with both hands at upper chest level and smoothly raise it overhead. Control the movement and avoid swinging or using momentum. This exercise develops shoulder strength and movement control.\n\nRecommended: 6–10 reps in 4–5 sets.",
+    "videoUrl": "https://youtu.be/fS7lyGUk4BU",
+    "defaultSets": 5,
+    "defaultReps": 10
   },
   {
     "id": "ex-005",
-    "name": "Dumbbell Hammer Curl",
+    "name": "Bent-Over Kettlebell Row for the Rear Deltoid",
     "muscleGroup": "arms",
-    "equipment": "dumbbells",
+    "equipment": "kettlebell",
     "difficulty": "easy",
-    "description": "Hold the dumbbells with a neutral grip, palms facing each other. Curl them to your shoulders without rotating your wrists."
+    "description": "Bend your torso forward while keeping your back stable. As you exhale, smoothly raise your elbow up and out to the side to emphasize the rear deltoid. Control the movement and avoid using momentum. This exercise develops rear delt and shoulder strength, as well as movement control.\n\nRecommended: 6–10 reps in 4–5 sets.",
+    "videoUrl": "https://youtu.be/aTTax0ufFLo",
+    "defaultSets": 5,
+    "defaultReps": 10
   },
   {
     "id": "ex-006",
-    "name": "Overhead Triceps Extension",
+    "name": "Bent-Over Kettlebell Rear Delt Fly",
     "muscleGroup": "arms",
-    "equipment": "dumbbells",
-    "difficulty": "medium",
-    "description": "Hold one dumbbell with both hands overhead. Bend only at the elbows to lower it behind your head, then press back up."
+    "equipment": "kettlebell",
+    "difficulty": "easy",
+    "description": "Bend your torso forward while keeping your back stable. As you exhale, smoothly move the kettlebell out to the side while keeping your elbow fixed. Control the movement and avoid using momentum. This exercise develops rear delt and shoulder strength, as well as movement control.\n\nRecommended: 6–10 reps in 4–5 sets.",
+    "videoUrl": "https://youtu.be/si-CCZpaAdg",
+    "defaultSets": 5,
+    "defaultReps": 10
   },
   {
     "id": "ex-007",
-    "name": "Close-Grip Pull-ups",
+    "name": "Kettlebell Bottoms-Up Biceps Curl (Variation 2)",
     "muscleGroup": "arms",
-    "equipment": "pull-up-bar",
-    "difficulty": "hard",
-    "description": "Grab the bar with a shoulder-width or narrower grip. Pull yourself up until your chin is over the bar, without swinging."
+    "equipment": "kettlebell",
+    "difficulty": "easy",
+    "description": "Hold the kettlebell by the handle with the bell facing downward and curl it toward your shoulder by bending your elbow. Control the movement throughout the exercise, especially during the lowering phase. This exercise develops biceps and forearm strength, as well as grip strength.\n\nRecommended: 6–10 reps in 4–5 sets.",
+    "videoUrl": "https://youtu.be/z8tH6DTCTXQ",
+    "defaultSets": 5,
+    "defaultReps": 10
   },
   {
     "id": "ex-008",
-    "name": "Barbell Curl",
+    "name": "Kettlebell Bottoms-Up Curl",
     "muscleGroup": "arms",
-    "equipment": "barbell",
-    "difficulty": "medium",
-    "description": "Stand tall, elbows pinned to your sides. Curl the bar to your shoulders using only your biceps, without leaning back."
+    "equipment": "kettlebell",
+    "difficulty": "easy",
+    "description": "Hold the kettlebell by the handle with the bell facing upward and curl it toward your shoulder by bending your elbow. Keep your wrist straight throughout the exercise — do not let it flex forward or backward. Control the movement of the kettlebell, especially during the lowering phase. This exercise develops biceps and forearm strength, wrist stability, and grip strength.\n\nRecommended: 6–10 reps in 4–5 sets.",
+    "videoUrl": "https://youtu.be/p7Qb26I2ie0",
+    "defaultSets": 5,
+    "defaultReps": 10
   },
   {
     "id": "ex-009",
-    "name": "Pike Push-ups",
+    "name": "Single-Arm Kettlebell Biceps Curl",
     "muscleGroup": "arms",
-    "equipment": "none",
-    "difficulty": "hard",
-    "description": "Form an inverted V with your body, hips high. Bend your arms and lower the top of your head toward the floor, then press back up."
+    "equipment": "kettlebell",
+    "difficulty": "easy",
+    "description": "Hold the kettlebell in one hand and curl it toward your shoulder by bending your elbow. Keep your elbow stable and avoid swinging your body. Control the kettlebell throughout the entire movement. This exercise develops biceps and forearm strength, as well as grip strength.\n\nRecommended: 6–10 reps in 4–5 sets.",
+    "videoUrl": "https://youtu.be/MSWNsRnATNk",
+    "defaultSets": 5,
+    "defaultReps": 10
   },
   {
     "id": "ex-010",
-    "name": "Kettlebell Overhead Press",
+    "name": "Kettlebell Wrist Rotation",
     "muscleGroup": "arms",
     "equipment": "kettlebell",
-    "difficulty": "medium",
-    "description": "Hold the kettlebell at your shoulder, palm facing you. Press it overhead until your arm is straight, then lower it back smoothly."
+    "difficulty": "easy",
+    "description": "Hold the kettlebell in front of your chest with the bell facing toward you. Smoothly rotate the kettlebell so the bell faces away from you, then return it to the starting position. Perform the movement primarily by rotating your wrists while keeping your elbows and torso stable. This exercise develops forearm strength, wrist stability, and grip strength.\n\nRecommended: 6–10 rotations in both directions, 4–5 sets.",
+    "videoUrl": "https://youtu.be/VQQcPoy__XQ",
+    "defaultSets": 5,
+    "defaultReps": 10
   },
   {
     "id": "ex-011",
-    "name": "Bodyweight Squat",
-    "muscleGroup": "legs",
-    "equipment": "none",
+    "name": "Kettlebell Forearm and Wrist Raise",
+    "muscleGroup": "arms",
+    "equipment": "kettlebell",
     "difficulty": "easy",
-    "description": "Stand with feet shoulder-width apart. Sit back as if into a chair, keeping your back straight and knees tracking over your toes."
+    "description": "Hold the kettlebell by the handle and smoothly raise it by bending your elbows about halfway through the range of motion. At the top of the movement, additionally flex your wrists. Focus on gripping the kettlebell with your hands and engaging your forearms. This exercise develops forearm, wrist, and grip strength.\n\nRecommended: 8–10 reps in 4–5 sets.",
+    "videoUrl": "https://youtu.be/hXfDZOY6NgU",
+    "defaultSets": 5,
+    "defaultReps": 10
   },
   {
     "id": "ex-012",
-    "name": "Barbell Back Squat",
-    "muscleGroup": "legs",
-    "equipment": "barbell",
-    "difficulty": "hard",
-    "description": "Rest the barbell on your upper back, feet shoulder-width apart. Squat until your thighs are parallel to the floor or lower, knees tracking over toes."
+    "name": "Overhead Kettlebell Triceps Extension",
+    "muscleGroup": "arms",
+    "equipment": "kettlebell",
+    "difficulty": "easy",
+    "description": "Hold the kettlebell behind your head with your elbows bent. Smoothly extend your arms to raise the kettlebell upward, then lower it back behind your head in a controlled manner. Keep your elbows stable and avoid using body momentum. This exercise develops triceps strength and movement control.\n\nRecommended: 6–10 reps in 4–5 sets.",
+    "videoUrl": "https://youtu.be/f3saxCWe-nk",
+    "defaultSets": 5,
+    "defaultReps": 10
   },
   {
     "id": "ex-013",
-    "name": "Walking Lunges",
-    "muscleGroup": "legs",
-    "equipment": "none",
-    "difficulty": "medium",
-    "description": "Take a long step forward and lower until both knees bend to 90 degrees. Push off the front foot and bring the back leg forward."
+    "name": "Lying Kettlebell Triceps Extension",
+    "muscleGroup": "arms",
+    "equipment": "kettlebell",
+    "difficulty": "easy",
+    "description": "Lie on your back and hold the kettlebell in front of your face. By bending your elbows, smoothly lower the kettlebell toward your forehead, then extend your arms to return it to the starting position. Keep your elbows stable and maintain control throughout the movement. This exercise develops triceps strength and elbow joint stability.\n\nRecommended: 6–10 reps in 4–5 sets.",
+    "videoUrl": "https://youtu.be/FWM1VvUAeos",
+    "defaultSets": 5,
+    "defaultReps": 10
   },
   {
     "id": "ex-014",
-    "name": "Goblet Squat",
-    "muscleGroup": "legs",
-    "equipment": "kettlebell",
-    "difficulty": "medium",
-    "description": "Hold the kettlebell with both hands at chest level. Squat down, pushing your knees out, and keep your back straight."
+    "name": "Push-Ups",
+    "muscleGroup": "arms",
+    "equipment": "none",
+    "difficulty": "easy",
+    "description": "Get into a plank position with your hands about shoulder-width apart. Lower your body by bending your elbows, then smoothly push yourself back up. Keep your torso stable and avoid arching your lower back. This exercise develops chest, triceps, and shoulder strength, as well as core stability.\n\nRecommended: perform the maximum number of reps with proper form, 4–5 sets.",
+    "videoUrl": "https://youtu.be/jVbWFAQmNts",
+    "defaultSets": 5,
+    "defaultReps": 20
   },
   {
     "id": "ex-015",
-    "name": "Dumbbell Romanian Deadlift",
-    "muscleGroup": "legs",
-    "equipment": "dumbbells",
+    "name": "Push-Ups with One Hand on a Kettlebell",
+    "muscleGroup": "arms",
+    "equipment": "kettlebell",
     "difficulty": "medium",
-    "description": "Stand with feet shoulder-width apart, dumbbells in front of your thighs. Hinge at the hips with a straight back, sliding the weights down your legs, knees slightly bent."
+    "description": "Get into a plank position with one hand on the kettlebell bell and the other on the floor. Perform the push-up while keeping your torso stable. The hand on the kettlebell gets a greater range of motion, stretching the chest muscle more deeply. This exercise develops chest, triceps, and shoulder strength, as well as core stability and coordination.\n\nRecommended: perform the maximum number of reps on each arm, 2–3 sets per arm.",
+    "videoUrl": "https://youtu.be/9aubkUx9wRc",
+    "defaultSets": 3,
+    "defaultReps": 10
   },
   {
     "id": "ex-016",
-    "name": "Jump Squats",
-    "muscleGroup": "legs",
-    "equipment": "none",
-    "difficulty": "hard",
-    "description": "Squat until your thighs are parallel to the floor, then explode upward. Land softly on slightly bent knees."
+    "name": "Kettlebell Bench Press",
+    "muscleGroup": "arms",
+    "equipment": "kettlebell",
+    "difficulty": "easy",
+    "description": "Lie on your back and hold the kettlebell in front of your chest. Smoothly lower the kettlebell to your chest, then press it back up. Control the movement and avoid using momentum. A narrow hand position increases the load on the triceps while the chest muscles remain actively engaged. This exercise develops chest, triceps, and shoulder strength.\n\nRecommended: 10–12 reps in 4–5 sets.",
+    "videoUrl": "https://youtu.be/dB-mA-Divzc",
+    "defaultSets": 5,
+    "defaultReps": 12
   },
   {
     "id": "ex-017",
-    "name": "Step-ups",
-    "muscleGroup": "legs",
-    "equipment": "bench",
+    "name": "Bent-Over Kettlebell Row to the Waist",
+    "muscleGroup": "arms",
+    "equipment": "kettlebell",
     "difficulty": "easy",
-    "description": "Place one foot on the bench and drive through it to stand up. Lower down smoothly and switch legs."
+    "description": "Bend your torso forward while keeping your back stable, and row the kettlebell to your waist with both hands. You can use three grip variations: by the side handle, overhand, or underhand. Control the movement and focus on feeling your back muscles working while squeezing your shoulder blades together. This exercise develops back, arm, and forearm strength.\n\nRecommended: 8–10 reps in 4–5 sets.",
+    "videoUrl": "https://youtu.be/Y5rnD14l9rY",
+    "defaultSets": 5,
+    "defaultReps": 10
   },
   {
     "id": "ex-018",
-    "name": "Bulgarian Split Squat",
-    "muscleGroup": "legs",
-    "equipment": "bench",
-    "difficulty": "hard",
-    "description": "Rest the top of your back foot on the bench, front foot forward. Squat on the front leg until the thigh is parallel to the floor."
+    "name": "One-Arm Bent-Over Kettlebell Row",
+    "muscleGroup": "arms",
+    "equipment": "kettlebell",
+    "difficulty": "easy",
+    "description": "Bend your torso forward while keeping your back stable, and row the kettlebell to your waist with one hand. You can perform the exercise without support or by bracing your free hand against a stable surface. Control the movement and avoid using body momentum. This exercise develops back, arm, and forearm strength.\n\nRecommended: 6–10 reps per arm, 3–4 sets per arm.",
+    "videoUrl": "https://youtu.be/Ab4BNT-l9Rc",
+    "defaultSets": 4,
+    "defaultReps": 10
   },
   {
     "id": "ex-019",
-    "name": "Standing Calf Raise",
-    "muscleGroup": "legs",
-    "equipment": "none",
+    "name": "Kettlebell Around-the-Body Rotation",
+    "muscleGroup": "arms",
+    "equipment": "kettlebell",
     "difficulty": "easy",
-    "description": "Stand tall and rise onto your toes, pausing for a second at the top. Hold dumbbells for extra resistance."
+    "description": "Keep your back straight and smoothly pass the kettlebell behind your body, transferring it from one hand to the other. Continue the circular motion around your body, controlling each handoff. This exercise develops grip, forearm, and shoulder strength, as well as coordination and movement control.\n\nRecommended: 8–10 rotations in each direction, 3–4 sets.",
+    "videoUrl": "https://youtu.be/TLixop0og9w",
+    "defaultSets": 4,
+    "defaultReps": 10
   },
   {
     "id": "ex-020",
-    "name": "Sumo Squat with Kettlebell",
-    "muscleGroup": "legs",
+    "name": "Kettlebell Rotation",
+    "muscleGroup": "arms",
     "equipment": "kettlebell",
-    "difficulty": "medium",
-    "description": "Stand with feet wide and toes pointed out. Hold the kettlebell with both hands and squat between your knees, keeping your back straight."
+    "difficulty": "easy",
+    "description": "Hold the kettlebell with both hands and perform a continuous circular motion: behind your head, down, in front of your body, and back behind your head. Keep your torso stable and maintain control throughout the entire exercise. This exercise develops shoulder, forearm, and grip strength and endurance, as well as coordination.\n\nRecommended: 6–10 rotations in each direction, 3–4 sets.",
+    "videoUrl": "https://youtu.be/jB2TL_Obmgs",
+    "defaultSets": 4,
+    "defaultReps": 10
   },
   {
     "id": "ex-021",
-    "name": "Wide-Grip Pull-ups",
-    "muscleGroup": "back",
-    "equipment": "pull-up-bar",
-    "difficulty": "hard",
-    "description": "Grab the bar with a wide overhand grip. Pull your chest to the bar, driving your elbows down and back."
+    "name": "Kettlebell Side Swings",
+    "muscleGroup": "arms",
+    "equipment": "kettlebell",
+    "difficulty": "medium",
+    "description": "Hold the kettlebell with both hands and perform smooth side-to-side swings, accompanied by torso rotation and weight transfer from one leg to the other. Try to engage your whole body, coordinating the movement of your legs, torso, and arms. This exercise develops full-body strength and coordination.\n\nRecommended: 6–10 rotations to each side, 3–4 sets.",
+    "videoUrl": "https://youtu.be/RcWjjJfBaxE",
+    "defaultSets": 4,
+    "defaultReps": 10
   },
   {
     "id": "ex-022",
-    "name": "Bent-Over Barbell Row",
-    "muscleGroup": "back",
-    "equipment": "barbell",
+    "name": "Russian Twists with a Kettlebell",
+    "muscleGroup": "arms",
+    "equipment": "kettlebell",
     "difficulty": "medium",
-    "description": "Hinge forward about 45–60 degrees with a straight back. Pull the bar toward your lower abs, squeezing your shoulder blades together."
+    "description": "Sit on the floor, bend your knees, and lean your torso back slightly while keeping your back stable. Hold the kettlebell with both hands in front of your body and perform controlled rotations to the right and left, moving the kettlebell along with your torso. This exercise develops core strength and endurance, especially in the oblique abdominal muscles.\n\nRecommended: 8–20 rotations to each side, 3–4 sets.",
+    "videoUrl": "https://youtu.be/6SxIfEICWEo",
+    "defaultSets": 4,
+    "defaultReps": 20
   },
   {
     "id": "ex-023",
-    "name": "Single-Arm Dumbbell Row",
-    "muscleGroup": "back",
-    "equipment": "dumbbells",
+    "name": "Goblet Squat",
+    "muscleGroup": "arms",
+    "equipment": "kettlebell",
     "difficulty": "easy",
-    "description": "Brace one knee and hand on a bench, back parallel to the floor. Pull the dumbbell to your hip, driving your elbow up."
+    "description": "Hold the kettlebell with both hands at chest level. Stand with your feet about shoulder-width apart and perform a squat by bending your knees and pushing your hips back. Keep your back straight, hold the kettlebell close to your chest, and maintain control of the movement. This exercise develops leg and glute strength, as well as core stability.\n\nRecommended: 8–14 reps in 3–4 sets.",
+    "videoUrl": "https://youtu.be/iM2FljA3Bs0",
+    "defaultSets": 4,
+    "defaultReps": 14
   },
   {
     "id": "ex-024",
-    "name": "Back Extension on Bench",
-    "muscleGroup": "back",
-    "equipment": "bench",
+    "name": "Kettlebell Sumo Squat",
+    "muscleGroup": "arms",
+    "equipment": "kettlebell",
     "difficulty": "easy",
-    "description": "Lie face-down on the bench with hips at the edge. Lift your torso with a straight back until your body forms a line with your legs."
+    "description": "Stand with your feet wider than shoulder-width, toes pointed slightly outward. Hold the kettlebell with both hands in front of you between your legs. Perform a squat by bending your knees and lowering your hips while keeping your back straight. This exercise develops glute, leg, and inner thigh strength.\n\nRecommended: 8–14 reps in 3–4 sets.",
+    "videoUrl": "https://youtu.be/YBvAMLc0crs",
+    "defaultSets": 4,
+    "defaultReps": 14
   },
   {
     "id": "ex-025",
-    "name": "Kettlebell Swing",
-    "muscleGroup": "back",
+    "name": "Kettlebell Reverse Lunges",
+    "muscleGroup": "arms",
     "equipment": "kettlebell",
-    "difficulty": "medium",
-    "description": "Stand with feet slightly wider than shoulders. Drive your hips powerfully to swing the kettlebell to chest height, using your back and glutes, not your arms."
+    "difficulty": "easy",
+    "description": "Hold the kettlebell and take a step back with one leg, lowering the back knee toward the floor. Keep your torso stable and return to the starting position in a controlled manner, then repeat the movement with the other leg while switching the kettlebell to the other hand. This exercise develops leg and glute strength, balance, and coordination.\n\nRecommended: 8–12 reps on each leg, 3–4 sets.",
+    "videoUrl": "https://youtu.be/r0p3LfMGPfc",
+    "defaultSets": 4,
+    "defaultReps": 12
   },
   {
     "id": "ex-026",
-    "name": "Chin-ups",
-    "muscleGroup": "back",
-    "equipment": "pull-up-bar",
-    "difficulty": "medium",
-    "description": "Grab the bar with an underhand grip, palms facing you, shoulder-width apart. Pull up smoothly, feeling your lats working."
+    "name": "Kettlebell Romanian Deadlift",
+    "muscleGroup": "arms",
+    "equipment": "kettlebell",
+    "difficulty": "easy",
+    "description": "Hold the kettlebell with both hands in front of you. Push your hips back, bend your knees slightly, and hinge your torso forward while keeping your back straight. Lower the kettlebell along your legs, then smoothly extend your hips and return to the starting position. This exercise develops glute, hamstring, and back strength.\n\nRecommended: 8–12 reps in 3–4 sets.",
+    "videoUrl": "https://youtu.be/NnYEng4d_X4",
+    "defaultSets": 4,
+    "defaultReps": 12
   },
   {
     "id": "ex-027",
-    "name": "Good Mornings",
-    "muscleGroup": "back",
-    "equipment": "barbell",
-    "difficulty": "hard",
-    "description": "Rest the barbell on your shoulders, feet shoulder-width apart. Hinge at the hips with a straight back and slightly bent knees, then return to standing."
+    "name": "Lunges",
+    "muscleGroup": "arms",
+    "equipment": "kettlebell",
+    "difficulty": "easy",
+    "description": "Hold the kettlebell in one hand and assume a lunge position with one leg forward. Smoothly lower your back knee toward the floor, then return to the lunge position without switching legs. Complete the required number of repetitions on one leg, then switch legs. This exercise develops leg and glute strength, balance, and coordination.\n\nRecommended: 8–12 reps on each leg, 3–4 sets.",
+    "videoUrl": "https://youtu.be/KYgDikKpm3k",
+    "defaultSets": 4,
+    "defaultReps": 12
   },
   {
     "id": "ex-028",
-    "name": "Superman",
-    "muscleGroup": "back",
-    "equipment": "none",
+    "name": "Kettlebell Swings",
+    "muscleGroup": "arms",
+    "equipment": "kettlebell",
     "difficulty": "easy",
-    "description": "Lie face-down with arms extended forward. Lift your arms, chest, and legs off the floor at the same time, hold for 1–2 seconds, then lower."
+    "description": "Hold the kettlebell with both hands and swing it between your legs by pushing your hips back. Then powerfully extend your hips and straighten your torso, driving the kettlebell forward to about chest height. The primary movement comes from your legs and hips — your arms stay relaxed and simply guide the kettlebell. This exercise develops explosive power and strength in the glutes and hamstrings.\n\nRecommended: 8–12 reps in 3–4 sets.",
+    "videoUrl": "https://youtu.be/RDJIaO79MmQ",
+    "defaultSets": 4,
+    "defaultReps": 12
   },
   {
     "id": "ex-029",
-    "name": "Dumbbell Pullover",
-    "muscleGroup": "back",
-    "equipment": "bench",
+    "name": "Kettlebell Swings with Squat",
+    "muscleGroup": "arms",
+    "equipment": "kettlebell",
     "difficulty": "medium",
-    "description": "Lie on the bench holding one dumbbell with both hands over your chest. With arms slightly bent, lower it behind your head and return to start."
+    "description": "Hold the kettlebell with both hands and swing it between your legs by pushing your hips back. Then powerfully extend your hips while simultaneously driving the kettlebell forward and transitioning into a deep squat. From the squat position, raise the kettlebell to about head height, then lower it back down. This exercise develops explosive leg power, shoulder strength, and coordination.\n\nRecommended: 8–12 reps in 3–4 sets.",
+    "videoUrl": "https://youtu.be/oQrlx3gmbjs",
+    "defaultSets": 4,
+    "defaultReps": 12
   },
   {
     "id": "ex-030",
-    "name": "Renegade Row",
-    "muscleGroup": "back",
-    "equipment": "dumbbells",
-    "difficulty": "hard",
-    "description": "Get into a plank position with hands on dumbbells. Row one dumbbell to your hip while keeping your torso stable, then switch sides."
+    "name": "Traps (Shrugs + Farmer's Walk)",
+    "muscleGroup": "arms",
+    "equipment": "kettlebell",
+    "difficulty": "medium",
+    "description": "Lean your torso slightly forward while keeping your back straight. Raise your shoulders up, then smoothly lower them. After the first set of shrugs, without lowering the kettlebell, lock your shoulders in the raised position and immediately transition into a farmer's walk for 20–40 seconds. After the walk, still without lowering the kettlebell, perform shrugs again. This complex develops trap strength and endurance, grip and forearm strength, and shoulder and core stability.\n\nRecommended: 8–14 shrugs, then a 20–40 second farmer's walk, then 6–14 more shrugs. 3 sets total.",
+    "videoUrl": "https://youtu.be/msp-Q--1ZsU",
+    "defaultSets": 3,
+    "defaultReps": 14
   },
   {
     "id": "ex-031",
-    "name": "shoulders №1",
-    "muscleGroup": "back",
-    "equipment": "dumbbells",
-    "difficulty": "medium",
-    "description": ""  ,
-    "videoUrl": "https://youtu.be/ktVCHcsdIWU?t=565"
+    "name": "Double Kettlebell Complex: Swing + Squat + Push Press",
+    "muscleGroup": "arms",
+    "equipment": "kettlebell",
+    "difficulty": "hard",
+    "description": "Perform a swing using your hips and legs to drive the kettlebells upward and lock them at your shoulders. From this position, perform a squat while keeping your back straight. Then powerfully extend your legs and push press the kettlebells overhead, fully extending your arms. Lower the kettlebells back to your shoulders and immediately transition into the next swing. This complex exercise develops full-body strength and endurance, explosive leg power, shoulder strength, coordination, and grip strength.\n\nRecommended: 6–10 reps in 3–4 sets.",
+    "videoUrl": "https://youtu.be/Odld4oLN6g8",
+    "defaultSets": 4,
+    "defaultReps": 10
   },
   {
     "id": "ex-032",
-    "name": "Burpees",
+    "name": "Single-Arm Kettlebell Forward Throw",
     "muscleGroup": "arms",
-    "secondaryMuscles": ["legs", "back"],
-    "equipment": "none",
-    "difficulty": "hard",
-    "description": "From standing, squat down, place your hands on the floor, jump back into a plank, do a push-up, return to squat, then jump up. A full-body compound movement."
+    "equipment": "kettlebell",
+    "difficulty": "medium",
+    "description": "Assume a stable fighting stance and hold the kettlebell in one hand at your shoulder. Powerfully extend your arm forward, performing a throw, while simultaneously engaging your legs and core to transfer force. After the throw, controllably return the kettlebell to your shoulder and repeat the movement. This exercise develops explosive shoulder and arm strength, coordination, core stability, and the ability to transfer force from the lower body through the core to the arm.\n\nRecommended: 10 throws per arm, 3–4 sets.",
+    "videoUrl": "https://youtu.be/qV9iPTqq6ow",
+    "defaultSets": 4,
+    "defaultReps": 10
+  },
+  {
+    "id": "ex-033",
+    "name": "Single-Arm Kettlebell Side Throw",
+    "muscleGroup": "arms",
+    "equipment": "kettlebell",
+    "difficulty": "medium",
+    "description": "Assume a stable standing position and hold the kettlebell in one hand in front of you. Perform a powerful throw to the side while simultaneously rotating your torso and pivoting your feet in the direction of movement. After the throw, controllably return to the starting position. This exercise develops explosive shoulder and arm strength, coordination, core stability, and the ability to transfer force from the lower body through the core to the arm.\n\nRecommended: 10 throws in each direction, 3–4 sets.",
+    "videoUrl": "https://youtu.be/tRiRV72gPTA",
+    "defaultSets": 4,
+    "defaultReps": 10
+  },
+  {
+    "id": "ex-034",
+    "name": "Rotational Kettlebell Push Press",
+    "muscleGroup": "arms",
+    "equipment": "kettlebell",
+    "difficulty": "medium",
+    "description": "Assume a stable fighting stance and hold the kettlebell in one hand at your shoulder, keeping your free hand in a protective position near your chin. Powerfully press the kettlebell overhead while simultaneously rotating your torso and pivoting your foot in the direction of movement. After the press, controllably return the kettlebell to your shoulder while simultaneously returning your torso and leg to the starting position. This exercise develops explosive shoulder and arm strength, coordination, core stability, and rotational power.\n\nRecommended: 8–10 reps per side, 3–4 sets.",
+    "videoUrl": "https://youtu.be/4AHzXNL8SBE",
+    "defaultSets": 4,
+    "defaultReps": 10
+  },
+  {
+    "id": "ex-035",
+    "name": "Kettlebell Push Press from a Lunge",
+    "muscleGroup": "arms",
+    "equipment": "kettlebell",
+    "difficulty": "medium",
+    "description": "Assume a stable fighting stance and perform a reverse lunge while keeping your free hand in a protective position near your chin. Then powerfully return to standing while simultaneously cleaning the kettlebell to your shoulder. From this position, immediately perform a push press overhead, extending your arm while simultaneously engaging your core and back leg. This exercise develops leg and shoulder strength and explosive power, coordination, balance, core stability, and grip strength.\n\nRecommended: 8–10 reps per side, 3–4 sets.",
+    "videoUrl": "https://youtu.be/LminGX8xhwI",
+    "defaultSets": 4,
+    "defaultReps": 10
+  },
+  {
+    "id": "ex-036",
+    "name": "Kettlebell Halo with Torso Rotation",
+    "muscleGroup": "arms",
+    "equipment": "kettlebell",
+    "difficulty": "medium",
+    "description": "Hold the kettlebell with both hands in front of you, bell facing up. Perform a circular motion with the kettlebell around your head, and after it passes behind your head, simultaneously rotate your torso and pivot your foot in the direction of movement. Then return your torso and leg to the starting position while continuing the halo motion, and repeat the movement in the opposite direction. This exercise develops shoulder strength and endurance, grip strength, rotational power and core stability, coordination, and movement control.\n\nRecommended: 6–10 reps per side, 3–4 sets.",
+    "videoUrl": "https://youtu.be/rAaAsrG6TDU",
+    "defaultSets": 4,
+    "defaultReps": 10
+  },
+  {
+    "id": "ex-037",
+    "name": "Kettlebell Around-the-Body Rotation with Side Throw",
+    "muscleGroup": "arms",
+    "equipment": "kettlebell",
+    "difficulty": "medium",
+    "description": "Take the kettlebell and begin rotating it around your body, transferring it from one hand to the other. After the kettlebell completes one rotation around your body, bring it to the side position and perform a throw to the side while simultaneously rotating your torso and engaging your legs to transfer force. After the throw, continue the rotation around your body, performing a throw in the opposite direction. This exercise develops explosive power, rotational core strength, coordination, and the ability to transfer force from the legs through the core to the upper body.\n\nRecommended: 6–10 throws in each direction, 3–4 sets.",
+    "videoUrl": "https://youtu.be/xDwREHnM2eo",
+    "defaultSets": 4,
+    "defaultReps": 10
   }
 ]

@@ -4,10 +4,10 @@ import Link from 'next/link';
 
 import type { WorkoutCategory } from '../../types';
 import { useLanguage } from '@/lib/LanguageContext';
-import { getWorkouts } from '@/lib/data'; // Утилита для получения тренировок на нужном языке
+import { getWorkouts } from '@/lib/data';
 
 // Порядок, в котором показываем категории
-const CATEGORIES: WorkoutCategory[] = ['wrestlers', 'bodybuilders', 'crossfit', 'runners'];
+const CATEGORIES: WorkoutCategory[] = ['wrestlers', 'bodybuilders', 'crossfit', 'runners', 'martial-arts'];
 
 export default function WorkoutsPage() {
   // Достаём язык и функцию перевода из контекста
@@ -24,8 +24,9 @@ export default function WorkoutsPage() {
 
         <div className="mt-8 grid grid-cols-1 gap-4 sm:grid-cols-2">
           {CATEGORIES.map((category) => {
-            // Считаем, сколько тренировок в этой категории
-            const count = workouts.filter((workout) => workout.category === category).length;
+            // НОВОЕ: считаем, сколько тренировок в этой категории
+            // Теперь categories — массив, поэтому используем includes
+            const count = workouts.filter((workout) => workout.categories.includes(category)).length;
 
             return (
               <Link

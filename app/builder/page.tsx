@@ -9,13 +9,14 @@ import { getExercises } from '@/lib/data';
 
 const MIN_TARGET = 1;
 const MAX_TARGET = 10;
-const DEFAULT_SETS = 3;
-const DEFAULT_REPS = 10;
 
-const GROUPS: MuscleGroup[] = ['arms', 'legs', 'back'];
+// НОВОЕ: группы для конструктора (без combo)
+type BuilderGroup = 'arms' | 'legs' | 'back';
+
+const GROUPS: BuilderGroup[] = ['arms', 'legs', 'back'];
 
 // Варианты фильтров по группе мышц для библиотеки упражнений
-const FILTERS: { value: MuscleGroup | 'all'; labelKey: string }[] = [
+const FILTERS: { value: BuilderGroup | 'all'; labelKey: string }[] = [
   { value: 'all', labelKey: 'exercises.filterAll' },
   { value: 'arms', labelKey: 'exercises.filterArms' },
   { value: 'legs', labelKey: 'exercises.filterLegs' },
@@ -32,8 +33,9 @@ const EQUIPMENT_KEYS: Record<Equipment, string> = {
   bench: 'equipment.bench',
 };
 
-type SelectedExercises = Record<MuscleGroup, Exercise[]>;
-type GroupTargets = Record<MuscleGroup, number>;
+// НОВОЕ: типы для состояния конструктора (без combo)
+type SelectedExercises = Record<BuilderGroup, Exercise[]>;
+type GroupTargets = Record<BuilderGroup, number>;
 
 // Функция случайно перемешивает массив
 function shuffle<T>(array: T[]): T[] {
@@ -63,31 +65,32 @@ export default function BuilderPage() {
     back: 2,
   });
 
-  // Состояние для фильтра библиотеки упражнений
-  const [activeFilter, setActiveFilter] = useState<MuscleGroup | 'all'>('all');
+  const [activeFilter, setActiveFilter] = useState<BuilderGroup | 'all'>('all');
 
   const router = useRouter();
 
   const isAdded = (exercise: Exercise): boolean =>
-    selected[exercise.muscleGroup].some((item) => item.id === exercise.id);
+    selected[exercise.muscleGroup as BuilderGroup]?.some((item) => item.id === exercise.id) ?? false;
 
   const addExercise = (exercise: Exercise): void => {
     if (isAdded(exercise)) return;
+    const group = exercise.muscleGroup as BuilderGroup;
+    if (!GROUPS.includes(group)) return; // защита от combo
 
     setSelected((prev) => ({
       ...prev,
-      [exercise.muscleGroup]: [...prev[exercise.muscleGroup], exercise],
+      [group]: [...prev[group], exercise],
     }));
   };
 
-  const removeExercise = (group: MuscleGroup, id: string): void => {
+  const removeExercise = (group: BuilderGroup, id: string): void => {
     setSelected((prev) => ({
       ...prev,
       [group]: prev[group].filter((item) => item.id !== id),
     }));
   };
 
-  const changeTarget = (group: MuscleGroup, delta: number): void => {
+  const changeTarget = (group: BuilderGroup, delta: number): void => {
     setTargets((prev) => {
       const newValue = Math.min(MAX_TARGET, Math.max(MIN_TARGET, prev[group] + delta));
       return { ...prev, [group]: newValue };
@@ -111,8 +114,8 @@ export default function BuilderPage() {
     const workoutExercises: WorkoutExercise[] = GROUPS.flatMap((group) =>
       selected[group].map((exercise) => ({
         exerciseId: exercise.id,
-        sets: DEFAULT_SETS,
-        reps: DEFAULT_REPS,
+        sets: exercise.defaultSets,
+        reps: exercise.defaultReps,
       }))
     );
 
@@ -126,8 +129,9 @@ export default function BuilderPage() {
     router.push('/training');
   };
 
-  // Отбираем упражнения по фильтру (только по главной группе)
+  // НОВОЕ: исключаем combo из фильтрации
   const filteredExercises = exercises.filter((exercise) => {
+    if (exercise.muscleGroup === 'combo') return false;
     return activeFilter === 'all' || exercise.muscleGroup === activeFilter;
   });
 
@@ -164,8 +168,6 @@ export default function BuilderPage() {
         )}
 
         <div className="mt-8 grid grid-cols-1 gap-8 lg:grid-cols-2">
-          {/* ════ ЛЕВАЯ СЕКЦИЯ: собираемая тренировка (ТРИ КОЛОНКИ) ════ */}
-          {/* ПОМЕНЯЛИ МЕСТАМИ: теперь эта секция первая */}
           <section>
             <h2 className="text-lg font-semibold text-white">{t('builder.yourWorkout')}</h2>
             <p className="mt-1 text-sm text-gray-500">{t('builder.yourWorkoutHint')}</p>
@@ -235,13 +237,10 @@ export default function BuilderPage() {
             </div>
           </section>
 
-          {/* ════ ПРАВАЯ СЕКЦИЯ: библиотека упражнений с фильтром ════ */}
-          {/* ПОМЕНЯЛИ МЕСТАМИ: теперь эта секция вторая */}
           <section>
             <h2 className="text-lg font-semibold text-white">{t('builder.libraryTitle')}</h2>
             <p className="mt-1 text-sm text-gray-500">{t('builder.libraryHint')}</p>
 
-            {/* Кнопки-фильтры по группе мышц */}
             <div className="mt-4 flex flex-wrap gap-2">
               {FILTERS.map((filter) => {
                 const isActive = activeFilter === filter.value;
@@ -261,7 +260,6 @@ export default function BuilderPage() {
               })}
             </div>
 
-            {/* Список упражнений (отфильтрованный) */}
             <div className="mt-4 space-y-2">
               {filteredExercises.map((exercise) => {
                 const added = isAdded(exercise);
@@ -285,14 +283,11 @@ export default function BuilderPage() {
                       )}
                     </div>
 
-                    {/* Бейджи: главная группа → вторичные группы → инвентарь */}
                     <div className="mt-2 flex flex-wrap gap-2">
-                      {/* Главная группа мышц — ОРАНЖЕВАЯ */}
                       <span className="rounded-full bg-orange-500/20 px-2.5 py-0.5 text-xs text-orange-400">
                         {t(`muscles.${exercise.muscleGroup}`)}
                       </span>
 
-                      {/* Вторичные группы мышц — РОЗОВЫЕ */}
                       {exercise.secondaryMuscles?.map((muscle) => (
                         <span
                           key={muscle}
@@ -302,7 +297,6 @@ export default function BuilderPage() {
                         </span>
                       ))}
 
-                      {/* Инвентарь */}
                       <span className="rounded-full bg-gray-700 px-2.5 py-0.5 text-xs text-gray-300">
                         {t(EQUIPMENT_KEYS[exercise.equipment])}
                       </span>

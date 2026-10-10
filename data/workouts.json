@@ -1,102 +1,12 @@
 [
   {
     "id": "w-001",
-    "title": "Сила борца: база",
-    "description": "Базовая силовая программа для борцов: приседания, жим и подтягивания. Развивает общую силу, которая нужна на ковре.",
-    "category": "wrestlers",
+    "title": "Комплекс с двумя гирями №1",
+    "description": "Комплекс выполняется с двумя гирями без отдыха между упражнениями. Отдых только после завершения полного круга. Упражнения последовательно задействуют грудь, спину, плечи, руки, ноги и мышцы кора, развивая силу, силовую выносливость, координацию и способность работать всем телом как единой системой. Подбор веса: подбирайте такой вес гирь, с которым можете выполнить 6–8 повторений каждого упражнения с правильной техникой.",
+    "categories": ["crossfit", "martial-arts"],
+    "videoUrl": "https://youtu.be/mmYR_qXxY2U",
     "exercises": [
-      { "exerciseId": "ex-012", "sets": 5, "reps": 5 },
-      { "exerciseId": "ex-003", "sets": 4, "reps": 8 },
-      { "exerciseId": "ex-022", "sets": 4, "reps": 8 },
-      { "exerciseId": "ex-021", "sets": 4, "reps": 6 },
-      { "exerciseId": "ex-025", "sets": 3, "reps": 15 }
-    ]
-  },
-  {
-    "id": "w-002",
-    "title": "Взрывная мощь",
-    "description": "Тренировка на взрывную силу: прыжки, махи гирей и мощные подтягивания. То, что нужно для бросков и проходов в ноги.",
-    "category": "wrestlers",
-    "exercises": [
-      { "exerciseId": "ex-016", "sets": 4, "reps": 10 },
-      { "exerciseId": "ex-025", "sets": 5, "reps": 15 },
-      { "exerciseId": "ex-009", "sets": 3, "reps": 10 },
-      { "exerciseId": "ex-026", "sets": 4, "reps": 8 }
-    ]
-  },
-  {
-    "id": "w-003",
-    "title": "Грудь и руки",
-    "description": "Классическая схема для проработки груди и рук: жимы, разгибания и подъёмы на бицепс. Умеренные веса, акцент на технику.",
-    "category": "bodybuilders",
-    "exercises": [
-      { "exerciseId": "ex-003", "sets": 4, "reps": 10 },
-      { "exerciseId": "ex-004", "sets": 3, "reps": 12 },
-      { "exerciseId": "ex-029", "sets": 3, "reps": 12 },
-      { "exerciseId": "ex-008", "sets": 4, "reps": 12 },
-      { "exerciseId": "ex-006", "sets": 3, "reps": 12 }
-    ]
-  },
-  {
-    "id": "w-004",
-    "title": "Спина и плечи",
-    "description": "Тренировка для широкой спины и округлых плеч: тяга в наклоне, подтягивания и жим над головой.",
-    "category": "bodybuilders",
-    "exercises": [
-      { "exerciseId": "ex-022", "sets": 4, "reps": 10 },
-      { "exerciseId": "ex-021", "sets": 4, "reps": 8 },
-      { "exerciseId": "ex-010", "sets": 4, "reps": 10 },
-      { "exerciseId": "ex-024", "sets": 3, "reps": 15 }
-    ]
-  },
-  {
-    "id": "w-005",
-    "title": "WOD для новичка",
-    "description": "Знакомство с кроссфитом: простые движения и умеренный объём. Выполняй упражнения по кругу, отдых между кругами — 1-2 минуты.",
-    "category": "crossfit",
-    "exercises": [
-      { "exerciseId": "ex-011", "sets": 3, "reps": 20 },
-      { "exerciseId": "ex-001", "sets": 3, "reps": 15 },
-      { "exerciseId": "ex-025", "sets": 4, "reps": 15 },
-      { "exerciseId": "ex-013", "sets": 3, "reps": 12 },
-      { "exerciseId": "ex-028", "sets": 3, "reps": 12 }
-    ]
-  },
-  {
-    "id": "w-006",
-    "title": "Кардио-микс",
-    "description": "Интенсивная функциональная тренировка на выносливость. Отдых между подходами — минимальный, темп — бодрый.",
-    "category": "crossfit",
-    "exercises": [
-      { "exerciseId": "ex-016", "sets": 4, "reps": 12 },
-      { "exerciseId": "ex-014", "sets": 3, "reps": 20 },
-      { "exerciseId": "ex-001", "sets": 3, "reps": 20 },
-      { "exerciseId": "ex-030", "sets": 3, "reps": 10 }
-    ]
-  },
-  {
-    "id": "w-007",
-    "title": "Сильные ноги",
-    "description": "Силовая работа для бегунов: выпады, приседания и подъёмы на носки. Делает бег экономичнее и бережёт колени.",
-    "category": "runners",
-    "exercises": [
-      { "exerciseId": "ex-013", "sets": 3, "reps": 15 },
-      { "exerciseId": "ex-018", "sets": 3, "reps": 10 },
-      { "exerciseId": "ex-015", "sets": 3, "reps": 12 },
-      { "exerciseId": "ex-017", "sets": 3, "reps": 12 },
-      { "exerciseId": "ex-019", "sets": 4, "reps": 20 }
-    ]
-  },
-  {
-    "id": "w-008",
-    "title": "Кор и стабильность",
-    "description": "Упражнения для мышц кора и задней цепи. Сильный и стабильный корпус помогает бегуну держать осанку на дистанции.",
-    "category": "runners",
-    "exercises": [
-      { "exerciseId": "ex-028", "sets": 3, "reps": 15 },
-      { "exerciseId": "ex-024", "sets": 3, "reps": 15 },
-      { "exerciseId": "ex-027", "sets": 3, "reps": 10 },
-      { "exerciseId": "ex-030", "sets": 3, "reps": 10 }
+      { "exerciseId": "ex-038", "sets": 4, "reps": 10 }
     ]
   }
 ]

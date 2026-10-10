@@ -1,7 +1,16 @@
-import type { NextConfig } from "next";
+import type { NextConfig } from 'next';
 
 const nextConfig: NextConfig = {
-  /* config options here */
+  // Статический экспорт.
+  // Next.js не будет запускать сервер — он сгенерирует готовые HTML-файлы
+  // в папку out/ на этапе сборки. Это обязательное условие для Capacitor.
+  output: 'export',
+
+  // Отключаем серверную оптимизацию картинок.
+  // При обычной работе Next.js обрабатывает картинки на своём сервере.
+  // У статического приложения сервера нет — значит, оптимизация невозможна.
+  // Наш проект использует только SVG и emoji — картинки не пострадают.
+  images: { unoptimized: true },
 };
 
 export default nextConfig;

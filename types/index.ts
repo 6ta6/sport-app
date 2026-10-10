@@ -5,7 +5,7 @@
 // 1. СПРАВОЧНИКИ ДОПУСТИМЫХ ЗНАЧЕНИЙ
 // ────────────────────────────────────────────────
 
-export type MuscleGroup = 'arms' | 'legs' | 'back';
+export type MuscleGroup = 'arms' | 'legs' | 'back' | 'combo';
 
 export type Equipment =
   | 'none'
@@ -21,28 +21,31 @@ export type WorkoutCategory =
   | 'wrestlers'
   | 'bodybuilders'
   | 'crossfit'
-  | 'runners';
+  | 'runners'
+  | 'martial-arts';
 
 // ────────────────────────────────────────────────
 // 2. ОСНОВНЫЕ СУЩНОСТИ
 // ────────────────────────────────────────────────
 
 // Упражнение из библиотеки.
-// Знак ? после поля означает «необязательное» — может отсутствовать.
 export interface Exercise {
   id: string;
   name: string;
   // Главная (первичная) группа мышц.
   // По этому полю работают фильтры и распределение в конструкторе.
   muscleGroup: MuscleGroup;
-  // НОВОЕ: дополнительные (вторичные) группы мышц.
+  // Дополнительные (вторичные) группы мышц.
   // Необязательное поле — у большинства упражнений его не будет.
-  // Показывается только как информационные бейджи, на фильтры не влияет.
   secondaryMuscles?: MuscleGroup[];
   equipment: Equipment;
   difficulty: Difficulty;
   description: string;
   videoUrl?: string; // ссылка на YouTube-видео с техникой (необязательная)
+  // Рекомендуемое количество подходов (максимум из диапазона)
+  defaultSets: number;
+  // Рекомендуемое количество повторений (максимум из диапазона)
+  defaultReps: number;
 }
 
 export interface WorkoutExercise {
@@ -55,7 +58,10 @@ export interface Workout {
   id: string;
   title: string;
   description: string;
-  category: WorkoutCategory;
+  // НОВОЕ: массив категорий (тренировка может принадлежать нескольким)
+  categories: WorkoutCategory[];
+  // НОВОЕ: ссылка на видео тренировки (необязательная)
+  videoUrl?: string;
   exercises: WorkoutExercise[];
 }
 
@@ -74,6 +80,7 @@ export const MUSCLE_GROUP_LABELS: Record<MuscleGroup, string> = {
   arms: 'Руки',
   legs: 'Ноги',
   back: 'Спина',
+  combo: 'Комбо',
 };
 
 export const EQUIPMENT_LABELS: Record<Equipment, string> = {
@@ -96,4 +103,5 @@ export const CATEGORY_LABELS: Record<WorkoutCategory, string> = {
   bodybuilders: 'Бодибилдеры',
   crossfit: 'Кроссфит',
   runners: 'Бегуны',
+  'martial-arts': 'Единоборства',
 };
