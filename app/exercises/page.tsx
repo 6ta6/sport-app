@@ -7,12 +7,15 @@ import type { Exercise, MuscleGroup, Equipment, Difficulty } from '../../types';
 import { useLanguage } from '@/lib/LanguageContext';
 import { getExercises } from '@/lib/data';
 
-// Варианты фильтров по группе мышц
+// НОВОЕ: варианты фильтров по группе мышц — теперь 8 кнопок
 const FILTERS: { value: MuscleGroup | 'all'; labelKey: string }[] = [
   { value: 'all', labelKey: 'exercises.filterAll' },
   { value: 'arms', labelKey: 'exercises.filterArms' },
   { value: 'legs', labelKey: 'exercises.filterLegs' },
   { value: 'back', labelKey: 'exercises.filterBack' },
+  { value: 'shoulders', labelKey: 'exercises.filterShoulders' },
+  { value: 'chest', labelKey: 'exercises.filterChest' },
+  { value: 'core', labelKey: 'exercises.filterCore' },
   { value: 'combo', labelKey: 'exercises.filterCombo' },
 ];
 

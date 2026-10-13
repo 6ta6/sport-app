@@ -32,6 +32,10 @@ export const TRANSLATIONS: Record<Language, Record<string, string>> = {
     'exercises.filterArms': 'Руки',
     'exercises.filterLegs': 'Ноги',
     'exercises.filterBack': 'Спина',
+    // НОВОЕ: фильтры для новых групп
+    'exercises.filterShoulders': 'Плечи',
+    'exercises.filterChest': 'Грудь',
+    'exercises.filterCore': 'Кор',
     'exercises.filterCombo': 'Комбо',
 
     'workouts.title': 'Готовые тренировки',
@@ -81,9 +85,13 @@ export const TRANSLATIONS: Record<Language, Record<string, string>> = {
     'exercise.notFound': 'Упражнение не найдено',
     'exercise.notFoundDesc': 'Упражнения с таким id не существует. Вернись в библиотеку.',
 
+    // Группы мышц: добавлены новые
     'muscles.arms': 'Руки',
     'muscles.legs': 'Ноги',
     'muscles.back': 'Спина',
+    'muscles.shoulders': 'Плечи',
+    'muscles.chest': 'Грудь',
+    'muscles.core': 'Кор',
     'muscles.combo': 'Комбо',
 
     'difficulty.easy': 'Лёгкая',
@@ -132,6 +140,10 @@ export const TRANSLATIONS: Record<Language, Record<string, string>> = {
     'exercises.filterArms': 'Arms',
     'exercises.filterLegs': 'Legs',
     'exercises.filterBack': 'Back',
+    // НОВОЕ: фильтры для новых групп
+    'exercises.filterShoulders': 'Shoulders',
+    'exercises.filterChest': 'Chest',
+    'exercises.filterCore': 'Core',
     'exercises.filterCombo': 'Combo',
 
     'workouts.title': 'Ready-made Workouts',
@@ -181,9 +193,13 @@ export const TRANSLATIONS: Record<Language, Record<string, string>> = {
     'exercise.notFound': 'Exercise not found',
     'exercise.notFoundDesc': 'No exercise with this id exists. Go back to the library.',
 
+    // Группы мышц: добавлены новые
     'muscles.arms': 'Arms',
     'muscles.legs': 'Legs',
     'muscles.back': 'Back',
+    'muscles.shoulders': 'Shoulders',
+    'muscles.chest': 'Chest',
+    'muscles.core': 'Core',
     'muscles.combo': 'Combo',
 
     'difficulty.easy': 'Easy',

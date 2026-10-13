@@ -405,5 +405,71 @@
     "videoUrl": "https://youtu.be/xDwREHnM2eo",
     "defaultSets": 4,
     "defaultReps": 10
+  },
+  {
+    "id": "ex-038",
+    "name": "Double Kettlebell Complex №1",
+    "muscleGroup": "combo",
+    "equipment": "kettlebell",
+    "difficulty": "medium",
+    "description": "Perform the complex with two kettlebells without resting between exercises. Rest only after completing a full round.\n\nThe exercises sequentially engage the chest, back, shoulders, arms, legs, and core, while developing strength, muscular endurance, coordination, and the ability to work the entire body as one system.\n\nComplex composition:\n1. Kettlebell Push-Ups\n2. Bent-Over Double Kettlebell Row\n3. Double Kettlebell Swings\n4. Double Kettlebell Clean + Push Press\n5. Double Kettlebell Front Squats\n\nWeight Selection: Choose a kettlebell weight that allows you to perform 6–8 repetitions of each exercise with proper form. Gradually increase the number of repetitions. Once you can perform more than 10 repetitions in all exercises without losing proper form, increase the kettlebell weight and return to 6–8 repetitions.\n\nRecommended: complete 4 rounds, resting 1–3 minutes between rounds, depending on your fitness level. Beginners can start with 6 repetitions.",
+    "videoUrl": "https://youtu.be/mmYR_qXxY2U",
+    "defaultSets": 4,
+    "defaultReps": 10
+  },
+  {
+    "id": "ex-039",
+    "name": "Double Kettlebell Complex №2",
+    "muscleGroup": "combo",
+    "equipment": "kettlebell",
+    "difficulty": "medium",
+    "description": "Perform the complex with two kettlebells, executing exercises sequentially without resting between them.\n\nThe complex is designed to develop strength, muscular endurance, explosive power, and full-body coordination. The chest, triceps, shoulder muscles, back muscles, glutes, quadriceps, hamstrings, and core are actively engaged.\n\nComplex composition:\n1. Kettlebell Push-Ups → Double Kettlebell Deadlift: 6–8 reps\n2. Kettlebell Push-Ups → Bent-Over Double Kettlebell Row: 6–8 reps\n3. Kettlebell Push-Ups → Double Kettlebell Swing Clean → Push Press: 6–8 reps\n4. Double Kettlebell Front Squats: 6–8 reps\n\nRecommended: complete 3 rounds, resting 2–3 minutes between rounds.",
+    "videoUrl": "https://youtu.be/gfsKPPOmW6Q",
+    "defaultSets": 3,
+    "defaultReps": 8
+  },
+  {
+    "id": "ex-040",
+    "name": "Double Kettlebell Complex №3",
+    "muscleGroup": "combo",
+    "equipment": "kettlebell",
+    "difficulty": "medium",
+    "description": "Perform the complex without resting between exercises. Sequential execution allows you to simultaneously develop strength, muscular endurance, explosive power, and full-body coordination. The chest, shoulders, back, legs, triceps, forearms, and core are actively engaged.\n\nComplex composition:\n1. Kettlebell Push-Ups: 5–8\n2. Double Kettlebell Swings: 5–8\n3. Double Kettlebell Push Press: 5–8\n4. Double Kettlebell Squats: 5–8\n\nRecommended: complete 3 rounds, resting 2–3 minutes between rounds.",
+    "videoUrl": "https://youtu.be/K_H9Z1i5gd4",
+    "defaultSets": 3,
+    "defaultReps": 8
+  },
+  {
+    "id": "ex-041",
+    "name": "Single Kettlebell Complex №1",
+    "muscleGroup": "combo",
+    "equipment": "kettlebell",
+    "difficulty": "medium",
+    "description": "Perform the complex with one kettlebell without resting between exercises. After completing the complex, switch arms and repeat the sequence on the other side.\n\nThe complex is designed to develop strength, muscular endurance, coordination, movement control, and the ability to effectively transfer force from the legs and core to the upper body. The leg muscles, back muscles, shoulders, triceps, biceps, forearms, and core are actively engaged.\n\nComplex composition:\n1. One-Arm Bent-Over Kettlebell Row — 5–8 reps\n2. Kettlebell Clean — 5–8 reps\n3. Kettlebell Overhead Press — 5–8 reps\n4. One-Arm Kettlebell High Pull → Clean → Push Press — 5–8 reps\n\nRecommended: complete 3–4 rounds on both arms, resting 2–3 minutes between rounds.",
+    "videoUrl": "https://youtu.be/1Hk6Hj6CXc4",
+    "defaultSets": 4,
+    "defaultReps": 8
+  },
+  {
+    "id": "ex-042",
+    "name": "Full-Body Barbell Complex",
+    "muscleGroup": "combo",
+    "equipment": "barbell",
+    "difficulty": "hard",
+    "description": "Perform the complex with a barbell without resting between exercises. Sequentially execute barbell push-ups, deadlifts, bent-over rows, and a combination of clean, squat, and overhead press.\n\nThe complex is designed to develop strength, muscular endurance, explosive power, and full-body coordination. The chest muscles, back muscles, glutes, quadriceps, hamstrings, shoulders, triceps, forearms, and core are actively engaged.\n\nComplex composition:\n1. Barbell Push-Ups — 5 reps\n2. Deadlift — 5 reps\n3. Bent-Over Barbell Row — 5 reps\n4. Barbell Clean → Squat → Overhead Press — 5 reps\n\nRecommended: complete 4 rounds, resting 2–3 minutes between rounds. Choose a barbell weight that allows you to perform 5–6 reps of each exercise with proper form throughout all 4 rounds.",
+    "videoUrl": "https://youtu.be/fy7aUUEbKbA",
+    "defaultSets": 4,
+    "defaultReps": 5
+  },
+  {
+    "id": "ex-043",
+    "name": "Barbell Complex No. 2",
+    "muscleGroup": "combo",
+    "equipment": "barbell",
+    "difficulty": "hard",
+    "description": "Perform the complex with a barbell without resting between exercises. Each exercise begins with a barbell push-up, immediately followed by an additional strength movement.\n\nThe complex is designed to develop strength, muscular endurance, explosive power, and full-body coordination. The chest muscles, back muscles, glutes, leg muscles, shoulders, triceps, forearms, and core are actively engaged.\n\nComplex composition:\n1. Barbell Push-Ups → Bent-Over Barbell Row — 5 reps\n2. Barbell Push-Ups → Deadlift — 5 reps\n3. Barbell Push-Ups → Deadlift → Barbell Clean → Push Press — 5 reps\n\nRecommended: complete 3 rounds, resting 2–3 minutes between rounds.",
+    "videoUrl": "https://youtu.be/XPziKmF-c7k",
+    "defaultSets": 3,
+    "defaultReps": 5
   }
 ]

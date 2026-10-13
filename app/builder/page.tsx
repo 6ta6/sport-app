@@ -10,12 +10,16 @@ import { getExercises } from '@/lib/data';
 const MIN_TARGET = 1;
 const MAX_TARGET = 10;
 
-// НОВОЕ: группы для конструктора (без combo)
-type BuilderGroup = 'arms' | 'legs' | 'back';
+// НОВОЕ: группы для конструктора (без combo) — теперь 6 групп
+type BuilderGroup = 'arms' | 'legs' | 'back' | 'shoulders' | 'chest' | 'core';
 
-const GROUPS: BuilderGroup[] = ['arms', 'legs', 'back'];
+// НОВОЕ: порядок колонок в конструкторе
+const GROUPS: BuilderGroup[] = [
+  'arms', 'legs', 'back', 'shoulders', 'chest', 'core'
+];
 
 // Варианты фильтров по группе мышц для библиотеки упражнений
+// Оставлены старые 4 кнопки (Все / Руки / Ноги / Спина)
 const FILTERS: { value: BuilderGroup | 'all'; labelKey: string }[] = [
   { value: 'all', labelKey: 'exercises.filterAll' },
   { value: 'arms', labelKey: 'exercises.filterArms' },
@@ -33,7 +37,7 @@ const EQUIPMENT_KEYS: Record<Equipment, string> = {
   bench: 'equipment.bench',
 };
 
-// НОВОЕ: типы для состояния конструктора (без combo)
+// НОВОЕ: типы для состояния конструктора (6 групп)
 type SelectedExercises = Record<BuilderGroup, Exercise[]>;
 type GroupTargets = Record<BuilderGroup, number>;
 
@@ -53,16 +57,24 @@ export default function BuilderPage() {
   const { language, t } = useLanguage();
   const exercises = getExercises(language);
 
+  // НОВОЕ: начальное состояние selected — 6 пустых массивов
   const [selected, setSelected] = useState<SelectedExercises>({
     arms: [],
     legs: [],
     back: [],
+    shoulders: [],
+    chest: [],
+    core: [],
   });
 
+  // НОВОЕ: начальное состояние targets — по 1 в каждой группе
   const [targets, setTargets] = useState<GroupTargets>({
-    arms: 2,
-    legs: 2,
-    back: 2,
+    arms: 1,
+    legs: 1,
+    back: 1,
+    shoulders: 1,
+    chest: 1,
+    core: 1,
   });
 
   const [activeFilter, setActiveFilter] = useState<BuilderGroup | 'all'>('all');
@@ -97,8 +109,11 @@ export default function BuilderPage() {
     });
   };
 
+  // НОВОЕ: randomSelected теперь с 6 группами
   const generateRandomWorkout = (): void => {
-    const randomSelected: SelectedExercises = { arms: [], legs: [], back: [] };
+    const randomSelected: SelectedExercises = { 
+      arms: [], legs: [], back: [], shoulders: [], chest: [], core: [] 
+    };
 
     GROUPS.forEach((group) => {
       const groupExercises = exercises.filter((exercise) => exercise.muscleGroup === group);
@@ -129,7 +144,7 @@ export default function BuilderPage() {
     router.push('/training');
   };
 
-  // НОВОЕ: исключаем combo из фильтрации
+  // Исключаем combo из фильтрации
   const filteredExercises = exercises.filter((exercise) => {
     if (exercise.muscleGroup === 'combo') return false;
     return activeFilter === 'all' || exercise.muscleGroup === activeFilter;
@@ -172,7 +187,8 @@ export default function BuilderPage() {
             <h2 className="text-lg font-semibold text-white">{t('builder.yourWorkout')}</h2>
             <p className="mt-1 text-sm text-gray-500">{t('builder.yourWorkoutHint')}</p>
 
-            <div className="mt-4 grid grid-cols-1 gap-4 sm:grid-cols-3">
+            {/* НОВОЕ: сетка колонок — 1 на мобильном, 2 на планшете, 3 на десктопе */}
+            <div className="mt-4 grid grid-cols-1 gap-4 sm:grid-cols-2 lg:grid-cols-3">
               {GROUPS.map((group) => {
                 const items = selected[group];
                 const isDone = items.length >= targets[group];
