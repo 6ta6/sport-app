@@ -7,7 +7,7 @@ import type { Exercise, Equipment, MuscleGroup, WorkoutExercise } from '../../ty
 import { useLanguage } from '@/lib/LanguageContext';
 import { getExercises } from '@/lib/data';
 
-const MIN_TARGET = 1;
+const MIN_TARGET = 0;
 const MAX_TARGET = 10;
 
 // НОВОЕ: группы для конструктора (без combo) — теперь 6 групп

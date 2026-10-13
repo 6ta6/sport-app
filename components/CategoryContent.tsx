@@ -15,7 +15,7 @@ export default function CategoryContent({ category }: Props) {
   // Достаём язык и функцию перевода из контекста
   const { language, t } = useLanguage();
 
-  // Получаем массив тренировок на текущем языке
+  // Получаем массив тренировок на текущем языке (уже нормализованный)
   const workouts = getWorkouts(language);
 
   // Проверяем, существует ли такая категория
@@ -35,20 +35,20 @@ export default function CategoryContent({ category }: Props) {
   // Категория существует — преобразуем тип для дальнейшей работы
   const currentCategory = category as keyof typeof CATEGORY_LABELS;
 
-  // НОВОЕ: отбираем тренировки, у которых currentCategory есть в массиве categories
-  const categoryWorkouts = workouts.filter(
-    (workout) => workout.categories.includes(currentCategory)
+  // ЗАЩИТА: (workout.categories || []) — если поля вдруг нет,
+  // подставится пустой массив, и .includes() вернёт false
+  // вместо падения приложения.
+  const categoryWorkouts = workouts.filter((workout) =>
+    (workout.categories || []).includes(currentCategory)
   );
 
   return (
     <main className="min-h-screen bg-gray-900 px-4 py-8 sm:px-6">
       <div className="mx-auto max-w-6xl">
-        {/* Заголовок, кнопка «Назад» и счётчик — в клиентском компоненте */}
         <CategoryHeader
           categoryLabelKey={`categories.${category}`}
           workoutsCount={categoryWorkouts.length}
         />
-        {/* Список тренировок с поиском */}
         <WorkoutsList workouts={categoryWorkouts} />
       </div>
     </main>
