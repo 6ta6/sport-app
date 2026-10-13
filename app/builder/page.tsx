@@ -69,12 +69,12 @@ export default function BuilderPage() {
 
   // НОВОЕ: начальное состояние targets — по 1 в каждой группе
   const [targets, setTargets] = useState<GroupTargets>({
-    arms: 1,
-    legs: 1,
-    back: 1,
-    shoulders: 1,
-    chest: 1,
-    core: 1,
+    arms: 0,
+    legs: 0,
+    back: 0,
+    shoulders: 0,
+    chest: 0,
+    core: 0,
   });
 
   const [activeFilter, setActiveFilter] = useState<BuilderGroup | 'all'>('all');
