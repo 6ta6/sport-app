@@ -5,7 +5,15 @@
 // 1. СПРАВОЧНИКИ ДОПУСТИМЫХ ЗНАЧЕНИЙ
 // ────────────────────────────────────────────────
 
-export type MuscleGroup = 'arms' | 'legs' | 'back' | 'combo';
+// Группы мышц: расширены до 7 значений
+export type MuscleGroup = 
+  | 'arms' 
+  | 'legs' 
+  | 'back' 
+  | 'shoulders' 
+  | 'chest' 
+  | 'core' 
+  | 'combo';
 
 export type Equipment =
   | 'none'
@@ -58,9 +66,9 @@ export interface Workout {
   id: string;
   title: string;
   description: string;
-  // НОВОЕ: массив категорий (тренировка может принадлежать нескольким)
+  // Массив категорий (тренировка может принадлежать нескольким)
   categories: WorkoutCategory[];
-  // НОВОЕ: ссылка на видео тренировки (необязательная)
+  // Ссылка на видео тренировки (необязательная)
   videoUrl?: string;
   exercises: WorkoutExercise[];
 }
@@ -76,10 +84,14 @@ export interface CustomWorkout {
 // 3. СЛОВАРИ ДЛЯ ОТОБРАЖЕНИЯ НА ЭКРАНЕ
 // ────────────────────────────────────────────────
 
+// НОВОЕ: добавлены shoulders, chest, core
 export const MUSCLE_GROUP_LABELS: Record<MuscleGroup, string> = {
   arms: 'Руки',
   legs: 'Ноги',
   back: 'Спина',
+  shoulders: 'Плечи',
+  chest: 'Грудь',
+  core: 'Кор',
   combo: 'Комбо',
 };
 
