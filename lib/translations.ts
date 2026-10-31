@@ -32,7 +32,6 @@ export const TRANSLATIONS: Record<Language, Record<string, string>> = {
     'exercises.filterArms': 'Руки',
     'exercises.filterLegs': 'Ноги',
     'exercises.filterBack': 'Спина',
-    // НОВОЕ: фильтры для новых групп
     'exercises.filterShoulders': 'Плечи',
     'exercises.filterChest': 'Грудь',
     'exercises.filterCore': 'Кор',
@@ -85,7 +84,6 @@ export const TRANSLATIONS: Record<Language, Record<string, string>> = {
     'exercise.notFound': 'Упражнение не найдено',
     'exercise.notFoundDesc': 'Упражнения с таким id не существует. Вернись в библиотеку.',
 
-    // Группы мышц: добавлены новые
     'muscles.arms': 'Руки',
     'muscles.legs': 'Ноги',
     'muscles.back': 'Спина',
@@ -105,10 +103,9 @@ export const TRANSLATIONS: Record<Language, Record<string, string>> = {
     'equipment.pullUpBar': 'Турник',
     'equipment.bench': 'Скамья',
 
+    // УДАЛЕНЫ: bodybuilders и runners
     'categories.wrestlers': 'Борцы',
-    'categories.bodybuilders': 'Бодибилдеры',
     'categories.crossfit': 'Кроссфит',
-    'categories.runners': 'Бегуны',
     'categories.martial-arts': 'Единоборства',
   },
 
@@ -140,7 +137,6 @@ export const TRANSLATIONS: Record<Language, Record<string, string>> = {
     'exercises.filterArms': 'Arms',
     'exercises.filterLegs': 'Legs',
     'exercises.filterBack': 'Back',
-    // НОВОЕ: фильтры для новых групп
     'exercises.filterShoulders': 'Shoulders',
     'exercises.filterChest': 'Chest',
     'exercises.filterCore': 'Core',
@@ -193,7 +189,6 @@ export const TRANSLATIONS: Record<Language, Record<string, string>> = {
     'exercise.notFound': 'Exercise not found',
     'exercise.notFoundDesc': 'No exercise with this id exists. Go back to the library.',
 
-    // Группы мышц: добавлены новые
     'muscles.arms': 'Arms',
     'muscles.legs': 'Legs',
     'muscles.back': 'Back',
@@ -213,10 +208,9 @@ export const TRANSLATIONS: Record<Language, Record<string, string>> = {
     'equipment.pullUpBar': 'Pull-up bar',
     'equipment.bench': 'Bench',
 
+    // УДАЛЕНЫ: bodybuilders и runners
     'categories.wrestlers': 'Wrestlers',
-    'categories.bodybuilders': 'Bodybuilders',
     'categories.crossfit': 'CrossFit',
-    'categories.runners': 'Runners',
     'categories.martial-arts': 'Martial Arts',
   },
 };

@@ -5,7 +5,6 @@
 // 1. СПРАВОЧНИКИ ДОПУСТИМЫХ ЗНАЧЕНИЙ
 // ────────────────────────────────────────────────
 
-// Группы мышц: расширены до 7 значений
 export type MuscleGroup = 
   | 'arms' 
   | 'legs' 
@@ -25,34 +24,26 @@ export type Equipment =
 
 export type Difficulty = 'easy' | 'medium' | 'hard';
 
+// УДАЛЕНЫ: bodybuilders и runners (не используются в тренировках)
 export type WorkoutCategory =
   | 'wrestlers'
-  | 'bodybuilders'
   | 'crossfit'
-  | 'runners'
   | 'martial-arts';
 
 // ────────────────────────────────────────────────
 // 2. ОСНОВНЫЕ СУЩНОСТИ
 // ────────────────────────────────────────────────
 
-// Упражнение из библиотеки.
 export interface Exercise {
   id: string;
   name: string;
-  // Главная (первичная) группа мышц.
-  // По этому полю работают фильтры и распределение в конструкторе.
   muscleGroup: MuscleGroup;
-  // Дополнительные (вторичные) группы мышц.
-  // Необязательное поле — у большинства упражнений его не будет.
   secondaryMuscles?: MuscleGroup[];
   equipment: Equipment;
   difficulty: Difficulty;
   description: string;
-  videoUrl?: string; // ссылка на YouTube-видео с техникой (необязательная)
-  // Рекомендуемое количество подходов (максимум из диапазона)
+  videoUrl?: string;
   defaultSets: number;
-  // Рекомендуемое количество повторений (максимум из диапазона)
   defaultReps: number;
 }
 
@@ -66,9 +57,7 @@ export interface Workout {
   id: string;
   title: string;
   description: string;
-  // Массив категорий (тренировка может принадлежать нескольким)
   categories: WorkoutCategory[];
-  // Ссылка на видео тренировки (необязательная)
   videoUrl?: string;
   exercises: WorkoutExercise[];
 }
@@ -84,7 +73,6 @@ export interface CustomWorkout {
 // 3. СЛОВАРИ ДЛЯ ОТОБРАЖЕНИЯ НА ЭКРАНЕ
 // ────────────────────────────────────────────────
 
-// НОВОЕ: добавлены shoulders, chest, core
 export const MUSCLE_GROUP_LABELS: Record<MuscleGroup, string> = {
   arms: 'Руки',
   legs: 'Ноги',
@@ -110,10 +98,9 @@ export const DIFFICULTY_LABELS: Record<Difficulty, string> = {
   hard: 'Сложная',
 };
 
+// УДАЛЕНЫ: bodybuilders и runners
 export const CATEGORY_LABELS: Record<WorkoutCategory, string> = {
   wrestlers: 'Борцы',
-  bodybuilders: 'Бодибилдеры',
   crossfit: 'Кроссфит',
-  runners: 'Бегуны',
   'martial-arts': 'Единоборства',
 };
