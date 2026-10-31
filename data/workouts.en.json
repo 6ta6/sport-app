@@ -58,5 +58,25 @@
     "exercises": [
       { "exerciseId": "ex-043", "sets": 3, "reps": 5 }
     ]
+  },
+  {
+    "id": "w-007",
+    "title": "Barbell Complex № 3",
+    "description": "This complex is designed to improve overall physical fitness, strength endurance, explosive power, and coordination. It combines pushing and pulling movements. Perform the exercises consecutively without resting between them. Rest only after completing a full round.",
+    "categories": ["crossfit", "wrestlers", "martial-arts"],
+    "videoUrl": "https://youtu.be/vnbHOT_K0v8",
+    "exercises": [
+      { "exerciseId": "ex-050", "sets": 4, "reps": 5 }
+    ]
+  },
+  {
+    "id": "w-008",
+    "title": "Double Kettlebell Complex №4",
+    "description": "The complex is performed with two kettlebells without rest between exercises. Performing the movements consecutively develops strength, explosive power, muscular endurance, and coordination. The complex helps improve the ability to transfer force between the lower and upper body, as well as overall physical fitness.",
+    "categories": ["wrestlers", "crossfit", "martial-arts"],
+    "videoUrl": "https://youtu.be/CLASMletiJk",
+    "exercises": [
+      { "exerciseId": "ex-051", "sets": 4, "reps": 8 }
+    ]
   }
 ]
