@@ -123,26 +123,34 @@ export default function BuilderPage() {
     setSelected(randomSelected);
   };
 
-  const canStart = GROUPS.every((group) => selected[group].length >= targets[group]);
+  // Считаем общее количество выбранных упражнений во всех группах
+const totalSelected = GROUPS.reduce((sum, group) => sum + selected[group].length, 0);
+
+// Кнопка активна, только если выбрано хотя бы 1 упражнение
+// И в каждой группе выполнено минимальное требование
+const canStart = totalSelected > 0 && GROUPS.every((group) => selected[group].length >= targets[group]);
 
   const startWorkout = (): void => {
-    const workoutExercises: WorkoutExercise[] = GROUPS.flatMap((group) =>
-      selected[group].map((exercise) => ({
-        exerciseId: exercise.id,
-        sets: exercise.defaultSets,
-        reps: exercise.defaultReps,
-      }))
-    );
+  const workoutExercises: WorkoutExercise[] = GROUPS.flatMap((group) =>
+    selected[group].map((exercise) => ({
+      exerciseId: exercise.id,
+      sets: exercise.defaultSets,
+      reps: exercise.defaultReps,
+    }))
+  );
 
-    const workout = {
-      title: t('builder.workoutTitle'),
-      exercises: workoutExercises,
-    };
+  // ЗАЩИТА: не начинаем тренировку, если нет ни одного упражнения
+  if (workoutExercises.length === 0) return;
 
-    localStorage.removeItem('activeWorkoutProgress');
-    localStorage.setItem('activeWorkout', JSON.stringify(workout));
-    router.push('/training');
+  const workout = {
+    title: t('builder.workoutTitle'),
+    exercises: workoutExercises,
   };
+
+  localStorage.removeItem('activeWorkoutProgress');
+  localStorage.setItem('activeWorkout', JSON.stringify(workout));
+  router.push('/training');
+};
 
   // Исключаем combo из фильтрации
   const filteredExercises = exercises.filter((exercise) => {
