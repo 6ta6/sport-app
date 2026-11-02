@@ -2,81 +2,81 @@
   {
     "id": "w-001",
     "title": "Double Kettlebell Complex №1",
-    "description": "Perform the complex with two kettlebells without resting between exercises. Rest only after completing a full round. The exercises sequentially engage the chest, back, shoulders, arms, legs, and core, while developing strength, muscular endurance, coordination, and the ability to work the entire body as one system. Weight Selection: Choose a kettlebell weight that allows you to perform 6–8 repetitions of each exercise with proper form.",
+    "description": "Perform the complex with two kettlebells without resting between exercises. Rest only after completing a full round.\n\nThe exercises sequentially engage the chest, back, shoulders, arms, legs, and core, while developing strength, muscular endurance, coordination, and the ability to work the entire body as one system.\n\nWeight Selection: Choose a kettlebell weight that allows you to perform 6–8 repetitions of each exercise with proper form.",
     "categories": ["crossfit", "martial-arts"],
     "videoUrl": "https://youtu.be/mmYR_qXxY2U",
     "exercises": [
-      { "exerciseId": "ex-038", "sets": 4, "reps": 10 }
+      { "exerciseId": "ex-037", "sets": 4, "reps": 10 }
     ]
   },
   {
     "id": "w-002",
     "title": "Double Kettlebell Complex № 2",
-    "description": "Perform the complex with two kettlebells, executing exercises sequentially without resting between them. The complex is designed to develop strength, muscular endurance, explosive power, and full-body coordination.",
+    "description": "Perform the complex with two kettlebells, executing exercises sequentially without resting between them.\n\nThe complex is designed to develop strength, muscular endurance, explosive power, and full-body coordination.",
     "categories": ["wrestlers", "crossfit", "martial-arts"],
     "videoUrl": "https://youtu.be/gfsKPPOmW6Q",
     "exercises": [
-      { "exerciseId": "ex-039", "sets": 3, "reps": 8 }
+      { "exerciseId": "ex-038", "sets": 3, "reps": 8 }
     ]
   },
   {
     "id": "w-003",
     "title": "Double Kettlebell Complex No. 3",
-    "description": "Perform the complex without resting between exercises. Sequential execution allows you to simultaneously develop strength, muscular endurance, explosive power, and full-body coordination.",
+    "description": "Perform the complex without resting between exercises. Sequential execution allows you to simultaneously develop strength, muscular endurance, explosive power, and full-body coordination.\n\nThe chest, shoulders, back, legs, and core are actively engaged.",
     "categories": ["wrestlers", "crossfit", "martial-arts"],
     "videoUrl": "https://youtu.be/K_H9Z1i5gd4",
     "exercises": [
-      { "exerciseId": "ex-040", "sets": 3, "reps": 8 }
+      { "exerciseId": "ex-039", "sets": 3, "reps": 8 }
     ]
   },
   {
     "id": "w-004",
     "title": "Single Kettlebell Complex №1",
-    "description": "Perform the complex with one kettlebell without resting between exercises. After completing the complex, switch arms and repeat the sequence on the other side.",
+    "description": "Perform the complex with one kettlebell without resting between exercises. After completing the complex, switch arms and repeat the sequence on the other side.\n\nThe complex is designed to develop strength, muscular endurance, coordination, and the ability to effectively transfer force from the legs and core to the upper body.",
     "categories": ["wrestlers", "crossfit", "martial-arts"],
     "videoUrl": "https://youtu.be/1Hk6Hj6CXc4",
     "exercises": [
-      { "exerciseId": "ex-041", "sets": 4, "reps": 8 }
+      { "exerciseId": "ex-040", "sets": 4, "reps": 8 }
     ]
   },
   {
     "id": "w-005",
     "title": "Full-Body Barbell Complex",
-    "description": "Perform the complex with a barbell without resting between exercises. Sequentially execute barbell push-ups, deadlifts, bent-over rows, and a combination of clean, squat, and overhead press.",
+    "description": "Perform the complex with a barbell without resting between exercises. Sequentially execute barbell push-ups, deadlifts, bent-over rows, and a combination of clean, squat, and overhead press.\n\nThe complex is designed to develop strength, muscular endurance, explosive power, and full-body coordination. The chest muscles, back muscles, glutes, quadriceps, hamstrings, shoulders, and core are actively engaged.\n\nRecommended: complete 4 rounds, resting 2–3 minutes between rounds. Choose a barbell weight that allows you to perform 5–6 reps of each exercise with proper form throughout all rounds.",
     "categories": ["wrestlers", "crossfit", "martial-arts"],
     "videoUrl": "https://youtu.be/fy7aUUEbKbA",
     "exercises": [
-      { "exerciseId": "ex-042", "sets": 4, "reps": 5 }
+      { "exerciseId": "ex-041", "sets": 4, "reps": 5 }
     ]
   },
   {
     "id": "w-006",
     "title": "Barbell Complex No. 2",
-    "description": "Perform the complex with a barbell without resting between exercises. Each exercise begins with a barbell push-up, immediately followed by an additional strength movement.",
+    "description": "Perform the complex with a barbell without resting between exercises. Each exercise begins with a barbell push-up, immediately followed by an additional strength movement.\n\nThe complex is designed to develop strength, muscular endurance, explosive power, and full-body coordination.",
     "categories": ["wrestlers", "crossfit", "martial-arts"],
     "videoUrl": "https://youtu.be/XPziKmF-c7k",
     "exercises": [
-      { "exerciseId": "ex-043", "sets": 3, "reps": 5 }
+      { "exerciseId": "ex-042", "sets": 3, "reps": 5 }
     ]
   },
   {
     "id": "w-007",
     "title": "Barbell Complex № 3",
-    "description": "This complex is designed to improve overall physical fitness, strength endurance, explosive power, and coordination. It combines pushing and pulling movements. Perform the exercises consecutively without resting between them. Rest only after completing a full round.",
+    "description": "This complex is designed to improve overall physical fitness, strength endurance, explosive power, and coordination. It combines pushing and pulling movements.\n\nPerform the exercises consecutively without resting between them. Rest only after completing a full round.\n\nComplex composition:\n1. Push-Ups + Deadlift\n2. Bent-Over Barbell Row\n3. Barbell Clean\n4. Overhead Barbell Press\n5. Barbell Squat\n\nRecommended: complete 4 rounds, resting 2–3 minutes between rounds. Choose a barbell weight that allows you to perform at least 5 repetitions of each exercise with proper technique throughout all rounds.",
     "categories": ["crossfit", "wrestlers", "martial-arts"],
     "videoUrl": "https://youtu.be/vnbHOT_K0v8",
     "exercises": [
-      { "exerciseId": "ex-050", "sets": 4, "reps": 5 }
+      { "exerciseId": "ex-049", "sets": 4, "reps": 5 }
     ]
   },
   {
     "id": "w-008",
     "title": "Double Kettlebell Complex №4",
-    "description": "The complex is performed with two kettlebells without rest between exercises. Performing the movements consecutively develops strength, explosive power, muscular endurance, and coordination. The complex helps improve the ability to transfer force between the lower and upper body, as well as overall physical fitness.",
+    "description": "The complex is performed with two kettlebells without rest between exercises. Performing the movements consecutively develops strength, explosive power, muscular endurance, and coordination.\n\nThe complex helps improve the ability to transfer force between the lower and upper body, as well as overall physical fitness. The back, shoulders, arms, legs, and core are actively engaged.\n\nComplex composition:\n1. Double Kettlebell Bent-Over Row\n2. Double Kettlebell Clean\n3. Double Kettlebell Clean → Squat → Overhead Press\n4. Double Kettlebell Swings\n\nRecommended: complete 3–4 rounds, resting 2–3 minutes between rounds. Choose a kettlebell weight that allows you to maintain proper technique throughout every exercise and every round.",
     "categories": ["wrestlers", "crossfit", "martial-arts"],
     "videoUrl": "https://youtu.be/CLASMletiJk",
     "exercises": [
-      { "exerciseId": "ex-051", "sets": 4, "reps": 8 }
+      { "exerciseId": "ex-050", "sets": 4, "reps": 8 }
     ]
   }
 ]
