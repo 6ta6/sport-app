@@ -26,7 +26,7 @@ export default function RootLayout({ children }: { children: ReactNode }) {
     // lang оставили «ru» статично: чтобы менять его динамически,
     // провайдер пришлось бы выносить выше <html>, что усложнило бы код
     <html lang="ru">
-      <body className="bg-gray-900">
+      <body className="bg-gray-900 text-white pt-[env(safe-area-inset-top)] pb-[env(safe-area-inset-bottom)]">
         {/* Оборачиваем ВСЁ дерево приложения в провайдер языка */}
         <LanguageProvider>
           <LayoutContent>{children}</LayoutContent>
