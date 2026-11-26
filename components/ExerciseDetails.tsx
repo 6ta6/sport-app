@@ -1,4 +1,4 @@
-'use client'; // Клиентский компонент: использует хук useLanguage для переводов
+'use client';
 
 import Link from 'next/link';
 import type { Exercise, Equipment } from '@/types';
@@ -6,7 +6,6 @@ import { useLanguage } from '@/lib/LanguageContext';
 import { getExercises } from '@/lib/data';
 import BackButton from '@/components/BackButton';
 
-// Маппинг значений инвентаря из JSON на ключи перевода
 const EQUIPMENT_KEYS: Record<Equipment, string> = {
   none: 'equipment.none',
   dumbbells: 'equipment.dumbbells',
@@ -16,18 +15,15 @@ const EQUIPMENT_KEYS: Record<Equipment, string> = {
   bench: 'equipment.bench',
 };
 
-// Пропсы: только id упражнения
 type Props = {
   id: string;
 };
 
-// Функция преобразует обычную ссылку на YouTube в ссылку для встраивания
 function getEmbedUrl(url: string): string | null {
   const match = url.match(/(?:youtube\.com\/watch\?v=|youtu\.be\/)([^&?]+)/);
   if (!match) return null;
-
   const videoId = match[1];
-  return `https://www.youtube.com/embed/${videoId}`;
+  return `https://www.youtube-nocookie.com/embed/${videoId}`;
 }
 
 export default function ExerciseDetails({ id }: Props) {
@@ -36,7 +32,6 @@ export default function ExerciseDetails({ id }: Props) {
   const exercise = exercises.find((ex) => ex.id === id) ?? null;
   const embedUrl = exercise?.videoUrl ? getEmbedUrl(exercise.videoUrl) : null;
 
-  // ═══ Особый случай: упражнение не найдено ═══
   if (!exercise) {
     return (
       <main className="min-h-screen bg-gray-900 px-4 py-8 sm:px-6">
@@ -64,15 +59,11 @@ export default function ExerciseDetails({ id }: Props) {
           {exercise.name}
         </h1>
 
-        {/* Бейджи: группа мышц (главная + вторичные), инвентарь, сложность */}
         <div className="mt-4 flex flex-wrap gap-2">
-          {/* Главная группа мышц — ОРАНЖЕВАЯ, всегда есть */}
           <span className="rounded-full bg-orange-500/20 px-3 py-1 text-xs font-medium text-orange-400">
             {t(`muscles.${exercise.muscleGroup}`)}
           </span>
 
-          {/* Вторичные группы мышц — РОЗОВЫЕ, чтобы отличались от главной.
-              Оператор ?. — если secondaryMuscles нет, ничего не отрисуется. */}
           {exercise.secondaryMuscles?.map((muscle) => (
             <span
               key={muscle}
@@ -82,12 +73,10 @@ export default function ExerciseDetails({ id }: Props) {
             </span>
           ))}
 
-          {/* Инвентарь */}
           <span className="rounded-full bg-gray-700 px-3 py-1 text-xs font-medium text-gray-300">
             {t(EQUIPMENT_KEYS[exercise.equipment])}
           </span>
 
-          {/* Сложность */}
           <span
             className={`rounded-full px-3 py-1 text-xs font-medium ${
               exercise.difficulty === 'easy'
@@ -101,11 +90,10 @@ export default function ExerciseDetails({ id }: Props) {
           </span>
         </div>
 
-        <p className="mt-6 text-base leading-relaxed text-gray-300">
+        <p className="mt-6 whitespace-pre-line text-base leading-relaxed text-gray-300">
           {exercise.description}
         </p>
 
-        {/* Блок с видео */}
         <section className="mt-10">
           <h2 className="text-xl font-semibold text-white">{t('exercise.video')}</h2>
 
